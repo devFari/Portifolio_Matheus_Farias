@@ -16,7 +16,6 @@ body {
 h1 {
     text-align: center; /* Centralização do título */
     font-family: Georgia, serif; /* Fonte serifada para destaque */
-    text-shadow: 0px 0px 45px white; /* Efeito de brilho sutil */
 }
 
 h2 {
@@ -27,7 +26,7 @@ h2 {
 
 h3 {
     font-family: "Times New Roman", Times, serif; /* Consistência visual */
-    text-align: center; /* Alinhamento padrão à esquerda */
+    text-align: left; /* Alinhamento padrão à esquerda */
     padding-top: 15px; /* Espaço acima do elemento */
 }
 
@@ -91,11 +90,15 @@ img {
 
 #links a {
     color: white; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
     margin: 10px; /* Espaço entre links */
     display: inline-block; /* Permite aplicar margens */
     font-size: 18px; /* Tamanho legível */
     font-weight: bold; /* Destaque visual */
+}
+
+#links a:hover {
+    opacity: 0.8;
+    transform: translateY(-1px); /* Efeito de "levitação" */
 }
 
 #rodape {
@@ -108,7 +111,7 @@ img {
     font-weight: bold; /* Destaque */
 }
 
-#tituloRedirecionar {
+#tituloRedirecionar, .tituloRedirecionar {
     cursor: pointer; /* Transforma o cursor em uma mãozinha */
     text-decoration: underline; /* Sublinha o texto */
 }
@@ -156,12 +159,17 @@ img {
     display: flex; /* Layout flexível */
     align-items: center; /* Alinhamento vertical */
     gap: 20px; /* Espaço entre elementos */
-    transition: transform 0.5s;   
-}  
+    transition: transform 0.5s;  
+} 
 
-.conteudo-certificado:hover {  
+.imagem-certificado-direita:hover {  
     transform: translateY(-10px); /* Efeito de "levitação" */  
 }  
+
+.imagem-certificado-esquerda:hover {  
+    transform: translateY(-10px); /* Efeito de "levitação" */  
+}  
+
 
 .texto-certificado-esquerda {
     flex: 1; /* Ocupa espaço restante */
@@ -178,36 +186,44 @@ img {
     height: auto; /* Altura proporcional */
     margin: 10px; /* Espaçamento externo */
     border-radius: 5px; /* Bordas arredondadas */
-}
-
-.tituloRedirecionar {
-    cursor: pointer; /* Transforma o cursor em uma mãozinha */
-    text-decoration: underline; /* Sublinha o texto */
+    cursor: pointer; /* Formato de mão (indica ação) */
 }
 
 
 
-/* Adaptações */
+
+/* Adaptações
 /* Ajustes para mobile */
-@media (max-width: 768px) {  
-    #links a {  
-        display: block; /* Links em blocos para mobile */  
-        margin: 10px 0;  
-    }  
-    .botaoRedirecionar {  
-        width: 100%; /* Botão ocupa toda a largura */  
-        max-width: none;  
-    }  
-}  
+@media (max-width: 768px) {
+    /* Ajuste o grid-container para 1 coluna */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 
-/* Para telas muito pequenas */  
-@media (max-width: 480px) {  
-    #divcorpo {  
-        width: 95%; /* Aproveita melhor o espaço */  
-        padding: 10px;  
-    }  
-    img {  
-        width: 250px;  
-        height: 250px;  
-    }  
+    /* Ajuste a direção flex em conteúdo certificado */
+    .conteudo-certificado {
+        flex-direction: column;
+    }
+
+    /* Centralize texto em mobile */
+    .texto-certificado-esquerda, 
+    .texto-certificado-direita {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduza o padding em telas muito pequenas */
+    #divcorpo {
+        padding: 15px;
+    }
+    
+    /* Ajuste tamanho da foto principal */
+    #imagem img {
+        width: 200px;
+        height: 200px;
+    }
 } 
+
+
+
