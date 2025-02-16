@@ -1,0 +1,25 @@
+DIV CO M O CERTIFICADO A DIREITA
+<div class="conteudo-certificado"> 
+
+    div class="texto-certificado-esquerda">
+        <p>O programa ONE (Oracle Next Education) não apenas ensina tecnologia, mas também capacita para uma aprendizagem eficiente. Nele, explorei meu propósito, identifiquei meu estilo de aprendizado e aprendi a criar planos eficientes. Descobri como usar diferentes metodologias, definir metas claras e acompanhar minha evolução. Além disso, aprimorei minha produtividade, eliminando distrações e utilizando técnicas baseadas na neurociência para potencializar meu aprendizado.</p>
+    </div>
+
+    <div class="imagem-certificado-direita">
+        <img src="imagens/OracleNextEducation/desenvolvimentoPessoal/aprender_a_aprender_ tecnicas_para_seu autodesenvolvimento.jpg" alt="Certificado" loading="lazy"/>
+    </div>
+
+</div>
+
+DIV COM O CERTIFICADO A ESQUERDA
+<div class="conteudo-certificado"> 
+
+    <div class="imagem-certificado-direita">
+        <img src="imagens/OracleNextEducation/desenvolvimentoPessoal/linkedIn_ como_fazer_o_seu_perfil_trabalhar_para_voce.jpg" alt="Certificado" loading="lazy"/>
+    </div>
+
+    <div class="texto-certificado-esquerda">
+        <p>No programa ONE (Oracle Next Education), aprendi a otimizar meu perfil profissional e destacar minhas habilidades no LinkedIn. Explorei as melhores práticas para tornar meu perfil mais atrativo, utilizei os principais recursos da plataforma a favor da minha carreira e compreendi como o LinkedIn avalia perfis para aumentar minha visibilidade. Além disso, aprendi a criar conexões estratégicas e a usar o **Pulse** para produzir conteúdos relevantes e fortalecer minha presença digital.</p>
+    </div>
+
+</div>

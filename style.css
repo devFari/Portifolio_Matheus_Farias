@@ -1,0 +1,213 @@
+/* TAGs */
+html, body {
+    background-color: black; /* Fundo preto para contraste */
+    color: white; /* Cor do texto padrão */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove espaçamento interno padrão */
+    font-family: Arial, sans-serif; /* Fonte principal (sans-serif) */
+    height: auto; /* Altura flexível conforme conteúdo */
+}
+
+body {  
+    opacity: 0;  
+    transition: opacity 0.5s;  
+}  
+
+h1 {
+    text-align: center; /* Centralização do título */
+    font-family: Georgia, serif; /* Fonte serifada para destaque */
+    text-shadow: 0px 0px 45px white; /* Efeito de brilho sutil */
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centralização */
+}
+
+h3 {
+    font-family: "Times New Roman", Times, serif; /* Consistência visual */
+    text-align: center; /* Alinhamento padrão à esquerda */
+    padding-top: 15px; /* Espaço acima do elemento */
+}
+
+p {
+    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada (estilo código) */
+}
+
+strong {
+    color: #5e17eb; /* Destaque em azul para palavras-chave */
+}
+
+img {
+    width: 300px; /* Largura fixa */
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Corta imagem para preencher o espaço */
+    border-radius: 50%; /* Transforma imagem em círculo */
+}
+
+
+
+/* IDs */
+#cabecalho {
+    text-align: center; /* Centraliza título/logo */
+    margin-bottom: 30px; /* Espaço abaixo do cabeçalho */
+}
+
+#conteudo {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre elementos filhos */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+#imagem {
+    width: 30%; /* Largura proporcional ao container pai */
+    display: flex; /* Flex para alinhar imagem */
+    justify-content: center; /* Centraliza conteúdo */
+}
+
+#texto {
+    width: 60%; /* Largura maior que a imagem */
+    text-align: justify; /* Texto alinhado às bordas */
+}
+
+#divcorpo {
+    width: 80%; /* Largura responsiva (80% do container pai) */
+    max-width: 1100px; /* Limite máximo para telas grandes */
+    margin: 20px auto; /* Centralização horizontal */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 5px 5px 200px #5e17eb; /* Sombra azulada (efeito neon) */
+    text-align: center; /* Centraliza conteúdo interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+#acompanhamento {
+    font-family: "Courier New", Courier, monospace; /* Estilo técnico */
+    color: white; /* Garante legibilidade */
+}
+
+#links a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 10px; /* Espaço entre links */
+    display: inline-block; /* Permite aplicar margens */
+    font-size: 18px; /* Tamanho legível */
+    font-weight: bold; /* Destaque visual */
+}
+
+#rodape {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza texto */
+    background-color: rgba(0, 0, 3, 0.425); /* Fundo semi-transparente */
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho grande */
+    font-weight: bold; /* Destaque */
+}
+
+#tituloRedirecionar {
+    cursor: pointer; /* Transforma o cursor em uma mãozinha */
+    text-decoration: underline; /* Sublinha o texto */
+}
+
+
+
+/* Classes */
+.grid-container {
+    display: grid; /* Layout em grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas (mín. 300px) */
+    gap: 20px; /* Espaço entre células */
+    place-items: center; /* Centraliza itens no grid */
+}
+
+.box {
+    width: 100%; /* Ocupa toda a largura da célula do grid */
+    max-width: 650px; /* Evita que estoure em telas grandes */
+    height: auto; /* Altura flexível */
+    text-align: center; /* Centraliza conteúdo interno */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+}
+
+.fase {
+    width: 100%; /* Largura total do container pai */
+    max-width: 900px; /* Limite para não expandir demais */
+    margin: 20px auto; /* Centralização */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid white; /* Borda branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 20px #5e17eb; /* Sombra azul suave */
+    background-color: rgba(5, 0, 34, 0.1); /* Fundo quase transparente */
+}
+
+.fase h2 {
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    font-size: 22px; /* Tamanho médio */
+    color: white; /* Cor garantida */
+    text-align: left; /* Alinhamento à esquerda */
+    padding-top: 15px; /* Espaço acima */
+}
+
+.conteudo-certificado {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 20px; /* Espaço entre elementos */
+    transition: transform 0.5s;   
+}  
+
+.conteudo-certificado:hover {  
+    transform: translateY(-10px); /* Efeito de "levitação" */  
+}  
+
+.texto-certificado-esquerda {
+    flex: 1; /* Ocupa espaço restante */
+    text-align: justify; /* Texto alinhado às bordas */
+}
+
+.texto-certificado-direita {
+    flex: 1; /* Ocupa espaço igual ao da imagem */
+    text-align: justify; /* Alinhamento justificado */
+}
+
+.imagem-certificado-direita img, .imagem-certificado-esquerda img {
+    max-width: 300px; /* Largura máxima */
+    height: auto; /* Altura proporcional */
+    margin: 10px; /* Espaçamento externo */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.tituloRedirecionar {
+    cursor: pointer; /* Transforma o cursor em uma mãozinha */
+    text-decoration: underline; /* Sublinha o texto */
+}
+
+
+
+/* Adaptações */
+/* Ajustes para mobile */
+@media (max-width: 768px) {  
+    #links a {  
+        display: block; /* Links em blocos para mobile */  
+        margin: 10px 0;  
+    }  
+    .botaoRedirecionar {  
+        width: 100%; /* Botão ocupa toda a largura */  
+        max-width: none;  
+    }  
+}  
+
+/* Para telas muito pequenas */  
+@media (max-width: 480px) {  
+    #divcorpo {  
+        width: 95%; /* Aproveita melhor o espaço */  
+        padding: 10px;  
+    }  
+    img {  
+        width: 250px;  
+        height: 250px;  
+    }  
+} 
