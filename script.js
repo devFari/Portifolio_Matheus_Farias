@@ -27,6 +27,3 @@ container.innerHTML += `
       <a href="${repo.html_url}" target="_blank">Ver no GitHub</a>  
   </div>  
 `;  
-
-
-

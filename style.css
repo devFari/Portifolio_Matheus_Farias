@@ -45,8 +45,6 @@ img {
     border-radius: 50%; /* Transforma imagem em círculo */
 }
 
-
-
 /* IDs */
 #cabecalho {
     text-align: center; /* Centraliza título/logo */
@@ -136,8 +134,6 @@ img {
     text-decoration: underline; /* Sublinha o texto */
 }
 
-
-
 /* Classes */
 .grid-container {
     display: grid; /* Layout em grid */
@@ -180,34 +176,44 @@ img {
     align-items: center; /* Alinhamento vertical */
     gap: 20px; /* Espaço entre elementos */
     transition: transform 0.5s;  
+    text-align: justify; /* Alinhamento justificado */
 } 
 
-.imagem-certificado-direita:hover {  
-    transform: translateY(-10px); /* Efeito de "levitação" */  
-}  
-
-.imagem-certificado-esquerda:hover {  
-    transform: translateY(-10px); /* Efeito de "levitação" */  
-}  
-
-
-.texto-certificado-esquerda {
-    flex: 1; /* Ocupa espaço restante */
-    text-align: justify; /* Texto alinhado às bordas */
-}
-
-.texto-certificado-direita {
+.texto-certificado {
     flex: 1; /* Ocupa espaço igual ao da imagem */
     text-align: justify; /* Alinhamento justificado */
 }
 
-.imagem-certificado-direita img, .imagem-certificado-esquerda img {
+.imagem-certificado img{
     max-width: 300px; /* Largura máxima */
     height: auto; /* Altura proporcional */
     margin: 10px; /* Espaçamento externo */
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Formato de mão (indica ação) */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
 }
+
+.imagem-certificado:hover {  
+    transform: translateY(-10px); /* Efeito de "levitação" */  
+}  
+
+.texto-certificado{
+    flex: 1; /* Ocupa espaço igual ao da imagem */
+    text-align: justify; /* Alinhamento justificado */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
