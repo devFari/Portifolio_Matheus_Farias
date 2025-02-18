@@ -1,4 +1,11 @@
 /* TAGs */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     background-color: black; /* Fundo preto para contraste */
     color: white; /* Cor do texto padrão */
@@ -6,6 +13,11 @@ html, body {
     padding: 0; /* Remove espaçamento interno padrão */
     font-family: Arial, sans-serif; /* Fonte principal (sans-serif) */
     height: auto; /* Altura flexível conforme conteúdo */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 body {  
@@ -45,10 +57,15 @@ img {
     border-radius: 50%; /* Transforma imagem em círculo */
 }
 
+
+
 /* IDs */
 #cabecalho {
+    position: relative;
+    width: 100%;
     text-align: center; /* Centraliza título/logo */
-    margin-bottom: 30px; /* Espaço abaixo do cabeçalho */
+    margin-bottom: 10px; /* Espaço abaixo do cabeçalho */
+    background-color: rgba(0, 0, 3, 0.103); /* Fundo semi-transparente */
 }
 
 #conteudo {
@@ -60,12 +77,14 @@ img {
 }
 
 #processo {
-    width: 100%; /* Ocupa 100% da largura da divcorpo */
-    max-width: 100%; /* Nunca ultrapassa a largura do container pai */
+    width: 95%; /* Ocupa 100% da largura da divcorpo */
+    max-width: 95%; /* Nunca ultrapassa a largura do container pai */
+    justify-items: auto;
     box-sizing: border-box; /* Considera padding na largura total */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
     padding: 15px; /* Mantém consistência com outras seções */
-    margin: 10px 0; /* Espaçamento interno */
+    margin: 10px auto;; /* Espaçamento interno */
+    margin-bottom: 20px;
     word-wrap: break-word; /* Quebra palavras longas */
 }
 
@@ -94,6 +113,7 @@ img {
     width: 80%; /* Largura responsiva (80% do container pai) */
     max-width: 1100px; /* Limite máximo para telas grandes */
     margin: 20px auto; /* Centralização horizontal */
+    margin-bottom: 60px; /* Garante um espaço de 200px até o rodapé */
     padding: 20px; /* Espaçamento interno */
     overflow: visible; /* Garante que a divcorpo não corte conteúdo */
     border: 1px solid white; /* Borda branca fina */
@@ -122,13 +142,17 @@ img {
 }
 
 #rodape {
+    position: fixed; /* Fixa na tela */
+    bottom: 0; /* Alinha na parte inferior */
     width: 100%; /* Ocupa toda a largura */
     padding: 10px; /* Espaçamento interno */
     text-align: center; /* Centraliza texto */
-    background-color: rgba(0, 0, 3, 0.425); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 3, 0.966); /* Fundo semi-transparente */
     color: white; /* Cor do texto */
     font-size: 20px; /* Tamanho grande */
     font-weight: bold; /* Destaque */
+    
+    
 }
 
 #tituloRedirecionar, .tituloRedirecionar {
@@ -149,9 +173,11 @@ img {
 #div_botao, #voltarPaginaAnterior{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -248,12 +274,6 @@ img {
     transition: all 0.5s ease-in-out; /* Animação suave */
 }
 
-.botao:hover {
-    background-color: #272727; /* Fundo muda ao passar o mouse */
-    color: white; /* Mantém a cor do texto */
-    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
-}
-
 .botaoVoltar{
     width: 300px; /* Largura fixa */
     border: 2px solid white; /* Borda branca */
@@ -268,7 +288,11 @@ img {
     transition: all 0.5s ease-in-out; /* Animação suave */  
 }
 
-
+.botao:hover, .botaoVoltar:hover {
+    background-color: #272727; /* Fundo muda ao passar o mouse */
+    color: white; /* Mantém a cor do texto */
+    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
+}
 
 
 
@@ -278,49 +302,35 @@ img {
 
 /* Adaptações
 /* Ajustes para mobile */
-@media (max-width: 768px) {
-    /* Ajuste o grid-container para 1 coluna */
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 768px) {  
+    /* Ajusta grid e flex containers */  
+    .grid-container {  
+        grid-template-columns: 1fr;  
+    }  
+    
+    .conteudo-certificado,  
+    #conteudo {  
+        flex-direction: column;  
+        align-items: center;  
+    }  
 
-    /* Ajuste a direção flex em conteúdo certificado */
-    .conteudo-certificado {
-        flex-direction: column;
-    }
-
-    /* Centralize texto em mobile */
-    .texto-certificado-esquerda, 
-    .texto-certificado-direita {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #conteudo {
-        flex-direction: column; /* Altera para coluna em telas menores */
-        align-items: center; /* Centraliza os itens na tela */
-    }
-
-    #imagem, #texto {
-        width: 100%; /* Cada div ocupa toda a largura do container */
-        max-width: 100%; /* Garante que não ultrapassem a largura do container */
-        text-align: center; /* Centraliza o texto */
-    }
-}
+    /* Ajusta elementos de texto e imagem */  
+    .texto-certificado-esquerda,  
+    .texto-certificado-direita,  
+    #imagem,  
+    #texto {  
+        width: 100%;  
+        max-width: 100%;  
+        text-align: center;  
+    }  
+}  
 
 @media (max-width: 480px) {
-    /* Reduza o padding em telas muito pequenas */
-    #divcorpo {
-        padding: 15px;
-    }
-    
-    /* Ajuste tamanho da foto principal */
-    #imagem img {
-        width: 200px;
-        height: 200px;
-    }
-} 
+    #divcorpo { padding: 15px; }
+    #imagem img { width: 200px; height: 200px; }
+    .botao { font-size: 24px; min-height: 80px; }
+}
+
 
 /* Layout com 3 botões por linha */
 @media (min-width: 901px) {
@@ -346,10 +356,5 @@ img {
     }
 }
 
-@media (max-width: 400px) {
-    .botao {
-        font-size: 24px; /* Reduz tamanho da fonte */
-        min-height: 80px; /* Altura menor */
-    }
-}
+
 
