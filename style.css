@@ -66,6 +66,7 @@ img {
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
     padding: 15px; /* Mantém consistência com outras seções */
     margin: 10px 0; /* Espaçamento interno */
+    word-wrap: break-word; /* Quebra palavras longas */
 }
 
 #imagem {
@@ -99,6 +100,7 @@ img {
     box-shadow: 5px 5px 200px #5e17eb; /* Sombra azulada (efeito neon) */
     text-align: center; /* Centraliza conteúdo interno */
     border-radius: 10px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Fundamental para cálculo correto */
 }
 
 #acompanhamento {
@@ -134,6 +136,30 @@ img {
     text-decoration: underline; /* Sublinha o texto */
 }
 
+#voltarPaginaAnterior{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de igual tamanho */
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#div_botao, #voltarPaginaAnterior{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
 /* Classes */
 .grid-container {
     display: grid; /* Layout em grid */
@@ -158,7 +184,7 @@ img {
     padding: 15px; /* Espaçamento interno */
     border: 1px solid white; /* Borda branca */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 20px #5e17eb; /* Sombra azul suave */
+    box-shadow: 5px 5px 20px #5e17eb; /* Sombra roxo suave */
     background-color: rgba(5, 0, 34, 0.1); /* Fundo quase transparente */
 }
 
@@ -194,13 +220,61 @@ img {
 }
 
 .imagem-certificado:hover {  
-    transform: translateY(-10px); /* Efeito de "levitação" */  
+    transform: translateY(-2px); /* Efeito de "levitação" */  
 }  
 
 .texto-certificado{
     flex: 1; /* Ocupa espaço igual ao da imagem */
     text-align: justify; /* Alinhamento justificado */
 }
+
+.botao {
+    width: 250px; /* Largura fixa */
+    min-height: 100px; /* Altura mínima em vez de fixa */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 15px; /* Espaçamento interno */
+    display: flex;
+    line-height: 1.4; /* Remove line-height fixo */
+    border: 2px solid white; /* Borda branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    font-size: 30px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
+    transition: all 0.5s ease-in-out; /* Animação suave */
+}
+
+.botao:hover {
+    background-color: #272727; /* Fundo muda ao passar o mouse */
+    color: white; /* Mantém a cor do texto */
+    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
+}
+
+.botaoVoltar{
+    width: 300px; /* Largura fixa */
+    border: 2px solid white; /* Borda branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
+    transition: all 0.5s ease-in-out; /* Animação suave */  
+}
+
+
+
+
+
+
+
+
 
 /* Adaptações
 /* Ajustes para mobile */
@@ -248,5 +322,34 @@ img {
     }
 } 
 
+/* Layout com 3 botões por linha */
+@media (min-width: 901px) {
+    .botao {
+        flex: 1 1 calc(33.33% - 40px); /* Garante 3 botões por linha */
+        max-width: 250px; /* Mantém tamanho fixo */
+    }
+}
 
+/* Para telas menores (máx. 900px), 2 botões por linha */
+@media (max-width: 900px) {
+    .botao {
+        flex: 1 1 calc(50% - 40px); /* Ajusta para 2 botões por linha */
+        max-width: 250px;
+    }
+}
+
+/* Para telas muito pequenas (máx. 600px), 1 botão por linha */
+@media (max-width: 600px) {
+    .botao {
+        flex: 1 1 100%; /* Ocupa toda a linha */
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    .botao {
+        font-size: 24px; /* Reduz tamanho da fonte */
+        min-height: 80px; /* Altura menor */
+    }
+}
 
