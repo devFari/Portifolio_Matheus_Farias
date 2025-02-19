@@ -1,5 +1,4 @@
 /* TAGs */
-
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +8,6 @@
 html, body {
     background-color: black; /* Fundo preto para contraste */
     color: white; /* Cor do texto padrão */
-    margin: 0; /* Remove margens padrão do navegador */
-    padding: 0; /* Remove espaçamento interno padrão */
     font-family: Arial, sans-serif; /* Fonte principal (sans-serif) */
     height: auto; /* Altura flexível conforme conteúdo */
     width: 100%;
@@ -38,16 +35,13 @@ h2 {
 
 h3 {
     font-family: "Times New Roman", Times, serif; /* Consistência visual */
-    text-align: left; /* Alinhamento padrão à esquerda */
-    padding-top: 15px; /* Espaço acima do elemento */
+    text-align: center;
+    padding-top: 20px; /* Espaço acima do elemento */
 }
 
 p {
     font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada (estilo código) */
-}
-
-strong {
-    color: #5e17eb; /* Destaque em azul para palavras-chave */
+    text-align: justify;
 }
 
 img {
@@ -57,9 +51,27 @@ img {
     border-radius: 50%; /* Transforma imagem em círculo */
 }
 
+strong {
+    color: #5e17eb; /* Destaque em azul para palavras-chave */
+}
+
+.strongComunicações{
+    color: #0096e3;
+}
+
+.strongExercito{
+    color: #5f683b;
+}
+
+.strongInta{
+    color: #004aad;
+}
+
+
 
 
 /* IDs */
+
 #cabecalho {
     position: relative;
     width: 100%;
@@ -232,8 +244,13 @@ img {
 } 
 
 .texto-certificado {
-    flex: 1; /* Ocupa espaço igual ao da imagem */
-    text-align: justify; /* Alinhamento justificado */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mantém os itens alinhados no topo */
+    align-items: flex-start; /* Garante alinhamento correto */
+    text-align: justify;
+    height: 100%;
+    overflow: hidden; /* Impede que o conteúdo ultrapasse a div */
 }
 
 .imagem-certificado img{
@@ -249,10 +266,6 @@ img {
     transform: translateY(-2px); /* Efeito de "levitação" */  
 }  
 
-.texto-certificado{
-    flex: 1; /* Ocupa espaço igual ao da imagem */
-    text-align: justify; /* Alinhamento justificado */
-}
 
 .botao {
     width: 250px; /* Largura fixa */
@@ -293,6 +306,9 @@ img {
     color: white; /* Mantém a cor do texto */
     box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
 }
+
+
+
 
 
 
