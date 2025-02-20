@@ -51,6 +51,10 @@ img {
     border-radius: 50%; /* Transforma imagem em círculo */
 }
 
+li{
+    text-align: justify;
+}
+
 strong {
     color: #5e17eb; /* Destaque em azul para palavras-chave */
 }
@@ -86,6 +90,7 @@ strong {
     align-items: center; /* Centraliza verticalmente */
     gap: 20px; /* Espaço entre elementos filhos */
     width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 15px;
 }
 
 #processo {
@@ -163,8 +168,7 @@ strong {
     color: white; /* Cor do texto */
     font-size: 20px; /* Tamanho grande */
     font-weight: bold; /* Destaque */
-    
-    
+
 }
 
 #tituloRedirecionar, .tituloRedirecionar {
