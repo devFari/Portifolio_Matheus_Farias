@@ -42,6 +42,7 @@ h3 {
 p {
     font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada (estilo código) */
     text-align: justify;
+    padding: 5px;
 }
 
 img {
@@ -70,6 +71,71 @@ strong {
 .strongInta{
     color: #004aad;
 }
+
+
+
+
+#conteudoMembro{
+ align-items: center;
+ padding-top: 10px;
+ max-width: 80%;
+}
+
+.grid-container-Membro {
+    display: grid; /* Layout em grid */
+    place-items: center; /* Centraliza itens no grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas (mín. 300px) */
+    gap: 10px; /* Espaço entre células */
+}
+
+#fotoMembro{
+ max-width: 150px;
+ max-height: 150px;
+}
+
+
+#textoMembro{
+    text-align: center;
+}
+
+#imagemMembro{
+    max-width: 40%;
+}
+
+#fotoNormal{
+    width: 80%;
+    height: fit-content;
+    border-radius: 0%;
+}
+
+#fotoNormal2{
+    max-width: 80%;
+    height: fit-content;
+    border-radius: 0%;
+}
+
+#manometros {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço igualmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 30px; /* Espaço entre as imagens */
+    padding: 20px;
+    flex-wrap: wrap; /* Quebra linha em telas pequenas */
+}
+
+#manometros img {
+    max-width: 45%; /* Mantém proporção sem ultrapassar o container */
+    height: auto; /* Altura automática */
+    object-fit: contain; /* Mantém proporção sem distorcer */
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -343,6 +409,15 @@ strong {
         max-width: 100%;  
         text-align: center;  
     }  
+
+    #manometros {
+        flex-direction: column; /* Empilha verticalmente */
+        gap: 20px;
+    }
+    
+    #manometros img {
+        max-width: 100%; /* Ocupa toda largura em mobile */
+    }
 }  
 
 @media (max-width: 480px) {
