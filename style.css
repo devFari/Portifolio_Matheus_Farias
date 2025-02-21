@@ -130,8 +130,26 @@ strong {
     
 }
 
+#areaInsignias h2{
+    text-align: center;
+}
 
 
+
+
+#insignia{
+    width: 300px;
+}
+
+#insignia p{
+    text-align: center;
+}
+
+#areaInsignias{
+    justify-items: auto; 
+    display: flex;
+    text-align: center;
+}
 
 
 
