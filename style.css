@@ -72,6 +72,42 @@ strong {
     color: #004aad;
 }
 
+#swot{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid white; /* Borda branca fina */
+}
+
+#fotoNormal4{
+    width: 49%;
+    border-radius: 0%;
+    height: fit-content;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,6 +149,18 @@ strong {
     height: fit-content;
     border-radius: 0%;
 }
+
+#fotoNormal3{
+    max-width: 80%;
+    min-width: 70%;
+    height: fit-content;
+    border-radius: 0%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
+}
+
 
 #manometros {
     display: flex;
@@ -192,11 +240,9 @@ strong {
 #imagem {
     width: 30%; /* Largura proporcional ao container pai */
     max-width: 100%; /* Nunca ultrapassa a largura do container pai */
-    box-sizing: border-box; /* Considera padding na largura total */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
+    box-sizing: border-box; /* Considera padding na largura total */ 
     display: flex; /* Flex para alinhar imagem */
     justify-content: center; /* Centraliza conteúdo */
-    overflow: hidden; /* Impede que conteúdo ultrapasse os limites */
 }
 
 #imagem img {
