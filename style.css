@@ -54,6 +54,8 @@ img {
 
 li{
     text-align: justify;
+    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada (estilo código) */
+    padding: 5px;
 }
 
 strong {
