@@ -62,144 +62,11 @@ strong {
     color: #5e17eb; /* Destaque em azul para palavras-chave */
 }
 
-.strongComunicações{
-    color: #0096e3;
-}
-
-.strongExercito{
-    color: #5f683b;
-}
-
-.strongInta{
-    color: #004aad;
-}
-
-#swot{
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
-    border: 1px solid white; /* Borda branca fina */
-}
-
-#fotoNormal4{
-    width: 49%;
-    border-radius: 0%;
-    height: fit-content;
-   
-}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#conteudoMembro{
- align-items: center;
- padding-top: 10px;
- max-width: 80%;
-}
-
-.grid-container-Membro {
-    display: grid; /* Layout em grid */
-    place-items: center; /* Centraliza itens no grid */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas (mín. 300px) */
-    gap: 10px; /* Espaço entre células */
-}
-
-#fotoMembro{
- max-width: 150px;
- max-height: 150px;
-}
-
-
-#textoMembro{
-    text-align: center;
-}
-
-#imagemMembro{
-    max-width: 40%;
-}
-
-#fotoNormal{
-    width: 80%;
-    height: fit-content;
-    border-radius: 0%;
-}
-
-#fotoNormal2{
-    max-width: 80%;
-    height: fit-content;
-    border-radius: 0%;
-}
-
-#fotoNormal3{
-    max-width: 80%;
-    min-width: 70%;
-    height: fit-content;
-    border-radius: 0%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border: 1px solid white; /* Borda branca fina */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
-}
-
-
-#manometros {
-    display: flex;
-    justify-content: space-around; /* Distribui o espaço igualmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 30px; /* Espaço entre as imagens */
-    padding: 20px;
-    flex-wrap: wrap; /* Quebra linha em telas pequenas */
-}
-
-#manometros img {
-    max-width: 45%; /* Mantém proporção sem ultrapassar o container */
-    height: auto; /* Altura automática */
-    object-fit: contain; /* Mantém proporção sem distorcer */
-    
-}
-
-#areaInsignias h2{
-    text-align: center;
-}
-
-
-
-
-#insignia{
-    width: 300px;
-}
-
-#insignia p{
-    text-align: center;
-}
-
-#areaInsignias{
-    justify-items: auto; 
-    display: flex;
-    text-align: center;
-}
 
 
 
@@ -329,6 +196,108 @@ strong {
     margin-bottom: 30px;
 }
 
+#swot{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid white; /* Borda branca fina */
+}
+
+#fotoNormal4{
+    width: 49%;
+    border-radius: 0%;
+    height: fit-content;
+   
+}
+
+#conteudoMembro{
+align-items: center;
+padding-top: 10px;
+max-width: 80%;
+}
+   
+#fotoMembro{
+max-width: 150px;
+max-height: 150px;
+}
+    
+#textoMembro{
+    text-align: center;
+}
+   
+#imagemMembro{
+    max-width: 40%;
+}
+   
+#fotoNormal{
+    width: 80%;
+    height: fit-content;
+    border-radius: 0%;
+}
+   
+#fotoNormal2{
+    max-width: 80%;
+    height: fit-content;
+    border-radius: 0%;
+}
+   
+#fotoNormal3{
+    max-width: 80%;
+    min-width: 70%;
+    height: fit-content;
+    border-radius: 0%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
+}
+   
+#manometros {
+    display: flex;
+    justify-content: space-around; /* Distribui o espaço igualmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 30px; /* Espaço entre as imagens */
+    padding: 20px;
+    flex-wrap: wrap; /* Quebra linha em telas pequenas */
+}
+   
+#manometros img {
+    max-width: 45%; /* Mantém proporção sem ultrapassar o container */
+    height: auto; /* Altura automática */
+    object-fit: contain; /* Mantém proporção sem distorcer */
+}
+   
+#areaInsignias h2{
+    text-align: center;
+}
+   
+#insignia{
+    width: 300px;
+}
+   
+#insignia p{
+    text-align: center;
+}
+   
+#areaInsignias{
+    justify-items: auto; 
+    display: flex;
+    text-align: center;
+}
+   
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -406,7 +375,6 @@ strong {
     transform: translateY(-2px); /* Efeito de "levitação" */  
 }  
 
-
 .botao {
     width: 250px; /* Largura fixa */
     min-height: 100px; /* Altura mínima em vez de fixa */
@@ -447,6 +415,35 @@ strong {
     box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
 }
 
+.strongComunicações{
+    color: #0096e3;
+}
+
+.strongExercito{
+    color: #5f683b;
+}
+
+.strongInta{
+    color: #004aad;
+}
+
+.grid-container-Membro {
+    display: grid; /* Layout em grid */
+    place-items: center; /* Centraliza itens no grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas (mín. 300px) */
+    gap: 10px; /* Espaço entre células */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -458,6 +455,20 @@ strong {
 
 /* Adaptações
 /* Ajustes para mobile */
+@media (max-width: 480px) {
+    #divcorpo { padding: 15px; }
+    #imagem img { width: 200px; height: 200px; }
+    .botao { font-size: 24px; min-height: 80px; }
+}
+
+/* Para telas muito pequenas (máx. 600px), 1 botão por linha */
+@media (max-width: 600px) {
+    .botao {
+        flex: 1 1 100%; /* Ocupa toda a linha */
+        max-width: 250px;
+    }
+}
+
 @media (max-width: 768px) {  
     /* Ajusta grid e flex containers */  
     .grid-container {  
@@ -490,13 +501,6 @@ strong {
     }
 }  
 
-@media (max-width: 480px) {
-    #divcorpo { padding: 15px; }
-    #imagem img { width: 200px; height: 200px; }
-    .botao { font-size: 24px; min-height: 80px; }
-}
-
-
 /* Layout com 3 botões por linha */
 @media (min-width: 901px) {
     .botao {
@@ -513,13 +517,6 @@ strong {
     }
 }
 
-/* Para telas muito pequenas (máx. 600px), 1 botão por linha */
-@media (max-width: 600px) {
-    .botao {
-        flex: 1 1 100%; /* Ocupa toda a linha */
-        max-width: 250px;
-    }
-}
 
 
 
