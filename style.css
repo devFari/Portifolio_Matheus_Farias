@@ -145,9 +145,12 @@ strong {
     color: white; /* Garante legibilidade */
 }
 
-#links a {
-    color: white; /* Cor dos links */
-    margin: 10px; /* Espaço entre links */
+#links{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#links a { 
     display: inline-block; /* Permite aplicar margens */
     font-size: 18px; /* Tamanho legível */
     font-weight: bold; /* Destaque visual */
@@ -198,19 +201,17 @@ strong {
 
 #swot{
     width: 90%;
-    margin: auto;
+    margin: 20px auto 30px;
     margin-top: 20px;
     margin-bottom: 30px;
-    justify-content: center;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+    min-height: 300px; /* Ajuste conforme necessário */
     border: 1px solid white; /* Borda branca fina */
-}
+    box-shadow: 0 0 15px rgb(255, 255, 255);
 
-#fotoNormal4{
-    width: 49%;
-    border-radius: 0%;
-    height: fit-content;
-   
 }
 
 #conteudoMembro{
@@ -249,10 +250,17 @@ max-height: 150px;
     min-width: 70%;
     height: fit-content;
     border-radius: 0%;
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 0 0 15px rgb(255, 255, 255);
     margin-top: 20px;
     margin-bottom: 30px;
-    border: 1px solid white; /* Borda branca fina */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
+}
+
+#fotoNormal4 {
+    width: 430px;
+    border-radius: 0;
+    height: auto; /* Garante que a altura se ajuste ao conteúdo */
+    margin: 0; /* Remove qualquer espaçamento externo */
 }
    
 #manometros {
