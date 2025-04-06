@@ -58,13 +58,26 @@ li{
     padding: 5px;
 }
 
+/* Stroong */
 strong {
     color: #5e17eb; /* Destaque em azul para palavras-chave */
 }
 
+#strongdc {
+    color: #9bd23a; /* Destaque em azul para palavras-chave */
+}
 
+#strongComunicações{
+    color: #0096e3;
+}
 
+#strongExercito{
+    color: #5f683b;
+}
 
+#strongInta{
+    color: #004aad;
+}
 
 
 
@@ -420,18 +433,6 @@ max-height: 150px;
     background-color: #272727; /* Fundo muda ao passar o mouse */
     color: white; /* Mantém a cor do texto */
     box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
-}
-
-.strongComunicações{
-    color: #0096e3;
-}
-
-.strongExercito{
-    color: #5f683b;
-}
-
-.strongInta{
-    color: #004aad;
 }
 
 .grid-container-Membro {
