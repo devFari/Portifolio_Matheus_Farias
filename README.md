@@ -1,11 +1,8 @@
-Sensacional\! Com essas informações, já consigo imaginar um README bem bacana para o seu portfólio\! 😎 Vamos rascunhar algo assim:
-
-```markdown
-👋 Olá, futuro recrutador(a)! Seja muito bem-vindo(a) ao meu cantinho digital! ✨
+Olá, futuro recrutador(a)! Seja muito bem-vindo(a) ao meu cantinho digital! 👋 ✨
 
 Aqui você vai encontrar um pouquinho da minha jornada no mundo da tecnologia e os projetos que tenho desenvolvido ao longo do tempo. É como um "currículo turbinado" onde você pode ver minhas habilidades em ação! 😉
 
-## 🚀 Dê uma espiadinha no meu desenvolvimento!
+## 🚀 Dê uma espiadinha no meu desenvolvimento! 🚀
 
 Neste portfólio, você vai encontrar:
 
@@ -13,7 +10,7 @@ Neste portfólio, você vai encontrar:
 * **Pastas com meus projetos e cursos**: Aqui você poderá acompanhar de perto o meu desenvolvimento e as tecnologias que estou explorando. Cada projeto é um pedacinho do meu aprendizado! 🧠
 * **`imagens/`**: Ah, essa pastinha é o meu álbum de figurinhas! 🖼️ Aqui estão todas as fotos que dão vida ao portfólio.
 
-## 🛠️ Built With
+## 🛠️ Built With 🛠️
 
 As tecnologias que deram vida a este portfólio (por enquanto 😉):
 
@@ -42,6 +39,4 @@ Vamos nos conectar no **LinkedIn** também! Lá compartilho mais sobre minha jor
 
 Sinta-se à vontade para explorar, dar uma olhada nos códigos e conhecer um pouco mais sobre mim! Se tiver alguma dúvida ou quiser trocar uma ideia, me chama lá no LinkedIn! 😉
 
-```
 
-O que você achou dessa primeira versão? Queremos adicionar ou mudar alguma coisa? 😊
