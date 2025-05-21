@@ -25,6 +25,8 @@ body {
 h1 {
     text-align: center; /* Centralização do título */
     font-family: Georgia, serif; /* Fonte serifada para destaque */
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -290,12 +292,21 @@ max-height: 150px;
     object-fit: contain; /* Mantém proporção sem distorcer */
 }
    
-#areaInsignias h2{
-    text-align: center;
+#insignia { /* ESTILOS PARA CADA ITEM INSIGNIA */
+    /* Calcula a largura para que 3 itens caibam por linha, considerando o gap */
+    width: calc(33.33% - 40px); /* 33.33% - (2 * gap) */
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+    text-align: center; /* Centraliza o texto e a imagem dentro de cada "insignia" */
+    margin-bottom: 0; /* O gap já cuida do espaçamento vertical */
+    padding: 15px; /* Exemplo: padding interno */
 }
-   
-#insignia{
-    width: 300px;
+
+#insignia img { /* ESTILOS PARA A IMAGEM DENTRO DE CADA "INSIGNIA" */
+    max-width: 100%; /* Garante que a imagem não transborde o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    margin: 0 auto 10px auto; /* Centraliza a imagem e adiciona margem inferior */
+    border-radius: 4px; /* Opcional: bordas arredondadas para as imagens */
 }
    
 #insignia p{
@@ -306,6 +317,8 @@ max-height: 150px;
     justify-items: auto; 
     display: flex;
     text-align: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza as "insignias" horizontalmente */
 }
    
 
