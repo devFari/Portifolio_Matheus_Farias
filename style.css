@@ -90,7 +90,7 @@ strong {
 
 
 
-/* IDs */
+/* GERAL */
 
 #cabecalho {
     position: relative;
@@ -213,6 +213,13 @@ strong {
     margin-bottom: 30px;
 }
 
+
+
+
+
+
+
+
 #swot{
     width: 90%;
     margin: 20px auto 30px;
@@ -234,6 +241,13 @@ padding-top: 10px;
 max-width: 80%;
 }
    
+
+
+
+
+
+/* EDIÇÃO DE FOTOS */
+
 #fotoMembro{
 max-width: 150px;
 max-height: 150px;
@@ -246,7 +260,8 @@ max-height: 150px;
 #imagemMembro{
     max-width: 40%;
 }
-   
+
+
 #fotoNormal{
     width: 80%;
     height: fit-content;
@@ -277,6 +292,13 @@ max-height: 150px;
     margin: 0; /* Remove qualquer espaçamento externo */
 }
    
+
+
+
+
+
+/* ENSINO MÉDIO */
+
 #manometros {
     display: flex;
     justify-content: space-around; /* Distribui o espaço igualmente */
@@ -292,6 +314,15 @@ max-height: 150px;
     object-fit: contain; /* Mantém proporção sem distorcer */
 }
    
+
+
+
+
+
+
+/* AREA DAS INSIGNEAS */
+
+
 #insignia { /* ESTILOS PARA CADA ITEM INSIGNIA */
     /* Calcula a largura para que 3 itens caibam por linha, considerando o gap */
     width: calc(33.33% - 40px); /* 33.33% - (2 * gap) */
