@@ -41,6 +41,10 @@ h3 {
     padding-top: 20px; /* Espaço acima do elemento */
 }
 
+h4{
+    text-align: left;
+}
+
 p {
     font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada (estilo código) */
     text-align: justify;
@@ -292,6 +296,7 @@ max-height: 150px;
     margin: 0; /* Remove qualquer espaçamento externo */
 }
    
+
 
 
 
@@ -572,3 +577,22 @@ max-height: 150px;
 
 
 
+
+
+/* selo */
+#selo{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    align-items: top; /* Centraliza verticalmente */
+    font-size: 20px;
+    margin-bottom: 80px; /* Garante um espaço de 200px até o rodapé */
+}
+
+#XGH{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
