@@ -408,46 +408,6 @@ max-height: 150px;
 }
 
 
-.botao {
-    width: 250px; /* Largura fixa */
-    min-height: 100px; /* Altura mínima em vez de fixa */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 15px; /* Espaçamento interno */
-    display: flex;
-    line-height: 1.4; /* Remove line-height fixo */
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 30px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */
-}
-
-.botaoVoltar{
-    width: 300px; /* Largura fixa */
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 20px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */  
-}
-
-.botao:hover, .botaoVoltar:hover {
-    background-color: #272727; /* Fundo muda ao passar o mouse */
-    color: white; /* Mantém a cor do texto */
-    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
-}
-
 .grid-container-Membro {
     display: grid; /* Layout em grid */
     place-items: center; /* Centraliza itens no grid */
@@ -564,47 +524,7 @@ max-height: 150px;
 
 /* zona de teste */
 
-#botao-pagina{
-    width: 250px; /* Largura fixa */
-    min-height: 100px; /* Altura mínima em vez de fixa */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 15px; /* Espaçamento interno */
-    display: flex;
-    line-height: 1.4; /* Remove line-height fixo */
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 30px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */
-}
 
-#botao-navegacao{
-    width: 300px; /* Largura fixa */
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 20px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */  
-}
-
-
-
-#botao-pagina:hover, #botao-navegacao:hover {
-    background-color: #272727; /* Fundo muda ao passar o mouse */
-    color: white; /* Mantém a cor do texto */
-    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
-}
 
 
 
@@ -665,4 +585,43 @@ max-height: 150px;
     text-align: justify;
     height: 100%;
     overflow: hidden; /* Impede que o conteúdo ultrapasse a div */
+}
+
+#botao-pagina{
+    width: 250px; /* Largura fixa */
+    min-height: 100px; /* Altura mínima em vez de fixa */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 15px; /* Espaçamento interno */
+    display: flex;
+    border: 2px solid white; /* Borda branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    font-size: 30px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
+    transition: all 0.5s ease-in-out; /* Animação suave */
+}
+
+#botao-navegacao{
+    width: 300px; /* Largura fixa */
+    border: 2px solid white; /* Borda branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
+    transition: all 0.5s ease-in-out; /* Animação suave */  
+}
+
+#botao-pagina:hover, #botao-navegacao:hover {
+    background-color: #272727; /* Fundo muda ao passar o mouse */
+    color: white; /* Mantém a cor do texto */
+    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
 }
