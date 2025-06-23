@@ -170,31 +170,6 @@ strong {
 
 
 
-#links{
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-#links a { 
-    display: inline-block; /* Permite aplicar margens */
-    font-size: 18px; /* Tamanho legível */
-    font-weight: bold; /* Destaque visual */
-}
-
-#links a:hover {
-    opacity: 0.8;
-    transform: translateY(-1px); /* Efeito de "levitação" */
-}
-
-
-
-
-
-
-
-
-
-
 
 
 #tituloRedirecionar, .tituloRedirecionar {
