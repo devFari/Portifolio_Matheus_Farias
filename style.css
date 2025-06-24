@@ -527,12 +527,7 @@ strong {
     gap: 30px; /* Espaço entre as imagens */
     padding: 20px;
     flex-wrap: wrap; /* Quebra linha em telas pequenas */
-}
-   
-#manometros img {
-    max-width: 45%; /* Mantém proporção sem ultrapassar o container */
-    height: auto; /* Altura automática */
-    object-fit: contain; /* Mantém proporção sem distorcer */
+    
 }
 
 /* Foguetes */
