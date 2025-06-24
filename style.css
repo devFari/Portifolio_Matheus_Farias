@@ -405,21 +405,6 @@ strong {
     overflow: hidden; /* Impede que o conteúdo ultrapasse a div */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Botões */
 #botao-pagina{
     width: 250px; /* Largura fixa */
@@ -459,18 +444,6 @@ strong {
     color: white; /* Mantém a cor do texto */
     box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Membros da INTÁ */
@@ -562,7 +535,6 @@ strong {
     object-fit: contain; /* Mantém proporção sem distorcer */
 }
 
-/* ENSINO MÉDIO */
 /* Foguetes */
 #Basuca{
     width: 80%;

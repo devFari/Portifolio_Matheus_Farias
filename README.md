@@ -40,3 +40,4 @@ Vamos nos conectar no **LinkedIn** também! Lá compartilho mais sobre minha jor
 Sinta-se à vontade para explorar, dar uma olhada nos códigos e conhecer um pouco mais sobre mim! Se tiver alguma dúvida ou quiser trocar uma ideia, me chama lá no LinkedIn! 😉
 
 
+[Documentação do Portifolio](https://docs.google.com/document/d/118IzW-2j1BiDcwXSXwEKPOCPNOwy_wM2LgudeNu5K8I/edit?tab=t.0)
