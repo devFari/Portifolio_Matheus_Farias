@@ -41,3 +41,4 @@ Sinta-se à vontade para explorar, dar uma olhada nos códigos e conhecer um pou
 
 
 [Documentação do Portifolio](https://docs.google.com/document/d/118IzW-2j1BiDcwXSXwEKPOCPNOwy_wM2LgudeNu5K8I/edit?tab=t.0)
+[Quadro Trello](https://trello.com/b/yHhH2l8v)
