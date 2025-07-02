@@ -40,6 +40,7 @@ h3 {
     font-family: "Times New Roman", Times, serif; /* Consistência visual */
     text-align: center;
     padding-top: 20px; /* Espaço acima do elemento */
+    padding-bottom: 10px;
 }
 
 h4{
@@ -302,7 +303,14 @@ strong {
 
 
 
-
+#conteudo-certificado12{
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 20px; /* Espaço entre elementos */
+    transition: transform 0.5s;  
+    text-align: center;
+    flex-direction: column;
+}
 
 
 
