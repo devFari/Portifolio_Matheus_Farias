@@ -303,14 +303,7 @@ strong {
 
 
 
-#conteudo-certificado12{
-    display: flex; /* Layout flexível */
-    align-items: center; /* Alinhamento vertical */
-    gap: 20px; /* Espaço entre elementos */
-    transition: transform 0.5s;  
-    text-align: center;
-    flex-direction: column;
-}
+
 
 
 
@@ -387,10 +380,13 @@ strong {
     align-items: center; /* Alinhamento vertical */
     gap: 20px; /* Espaço entre elementos */
     transition: transform 0.5s;  
-    text-align: justify; /* Alinhamento justificado */
+    text-align: center;
+    flex-direction: column;
 }
 
-#conteudo-certificado13{
+
+
+#conteudo-certificado12{
     display: flex; /* Layout flexível */
     align-items: center; /* Alinhamento vertical */
     gap: 20px; /* Espaço entre elementos */
