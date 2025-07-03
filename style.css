@@ -390,6 +390,14 @@ strong {
     text-align: justify; /* Alinhamento justificado */
 }
 
+#conteudo-certificado13{
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 20px; /* Espaço entre elementos */
+    transition: transform 0.5s;  
+    text-align: justify; /* Alinhamento justificado */
+}
+
 #conteudo-certificado img{
     max-width: 300px; /* Largura máxima */
     height: auto; /* Altura proporcional */
@@ -606,6 +614,8 @@ strong {
     margin: 0; /* Remove qualquer espaçamento externo */
 }
 
+/* LOGO DEVFARI */
+
 
 
 
@@ -694,3 +704,78 @@ strong {
         max-width: 250px;
     }
 }
+
+
+
+/* NOVA AEA DE TESTES */
+#aside{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    margin-right: 10%;
+    background-color: #1f1f1f;
+    border-right: 1px solid white; /* Borda branca fina */
+    text-align: center;
+}
+
+#botao-aside {
+    width: 150px; /* Largura fixa */
+    min-height: 50px; /* Altura mínima em vez de fixa */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px;
+    display: flex;
+    border: 2px solid white; /* Borda branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
+    transition: all 0.5s ease-in-out; /* Animação suave */
+}
+
+#botao-aside:hover {
+    background-color: #9b9b9b; /* Fundo muda ao passar o mouse */
+    color: white; /* Mantém a cor do texto */
+    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
+}
+
+
+
+
+
+#figurelogoDevFari {
+    position: relative;
+    width: 100%;
+    text-align: center; /* Centraliza título/logo */
+    margin-top: 60px;
+    margin-bottom: 1%;
+    bottom: 0px;
+}
+
+#logo_devfari {
+    max-width: 80%;
+    height: fit-content;
+    border-radius: 0%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#divcorponew {/* PADRONIZA TODAS AS PAGINAS */
+    width: 80%; /* Largura responsiva (80% do container pai) */
+    max-width: 1100px; /* Limite máximo para telas grandes */
+    margin: 20px auto; /* Centralização horizontal */
+    margin-bottom: 50px; /* Garante um espaço de 60px até o rodapé */
+    padding: 20px; /* Espaçamento interno */
+    overflow: visible; /* Garante que a divcorpo não corte conteúdo */
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 5px 5px 200px #5e17eb; /* Sombra (efeito neon) */
+    text-align: center; /* Centraliza conteúdo interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Fundamental para cálculo correto */
+}
+
