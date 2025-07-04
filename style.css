@@ -384,17 +384,15 @@ strong {
     flex-direction: column;
 }
 
-
-
-#conteudo-certificado12{
+#conteudo-certificadoimg{
     display: flex; /* Layout flexível */
     align-items: center; /* Alinhamento vertical */
     gap: 20px; /* Espaço entre elementos */
     transition: transform 0.5s;  
-    text-align: justify; /* Alinhamento justificado */
+    text-align: center;
 }
 
-#conteudo-certificado img{
+#conteudo-certificadoimg img{
     max-width: 300px; /* Largura máxima */
     height: auto; /* Altura proporcional */
     margin: 10px; /* Espaçamento externo */
