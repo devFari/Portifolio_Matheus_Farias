@@ -66,7 +66,11 @@ li{
     padding: 5px;
 }
 
-/* Stroong */
+
+
+
+
+/* STONGs */
 strong {
     color: #5e17eb; /* Destaque em azul para palavras-chave */
 }
@@ -87,6 +91,11 @@ strong {
     color: #004aad;
 }
 
+
+
+
+
+/* CABEÇALHO E RODAPÉ */
 #cabecalho {
     position: relative;
     width: 100%;
@@ -112,32 +121,7 @@ strong {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RESTO */
-
+/* IMAGENS */
 #imagem {
     width: 30%; /* Largura proporcional ao container pai */
     max-width: 100%; /* Nunca ultrapassa a largura do container pai */
@@ -152,13 +136,37 @@ strong {
     object-fit: contain; /* Ajusta a imagem dentro da div sem cortar */
 }
 
+/* Baner */
+#Baner{
+    max-width: 80%;
+    min-width: 70%;
+    height: fit-content;
+    border-radius: 0%;
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#Giga-Baner{
+    width: 90%;
+    margin: 20px auto 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
+    min-height: 300px; /* Ajuste conforme necessário */
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 0 0 15px rgb(255, 255, 255);
 
+}
 
-
-
-#acompanhamento {
-    font-family: "Courier New", Courier, monospace; /* Estilo técnico */
-    color: white; /* Garante legibilidade */
+#Mini-Baner {
+    width: 430px;
+    border-radius: 0;
+    height: auto; /* Garante que a altura se ajuste ao conteúdo */
+    margin: 0; /* Remove qualquer espaçamento externo */
 }
 
 
@@ -167,15 +175,158 @@ strong {
 
 
 
+/* FORMATAÇÃO DE PAGINA */
+.box {
+    width: 100%; /* Ocupa toda a largura da célula do grid */
+    max-width: 650px; /* Evita que estoure em telas grandes */
+    height: auto; /* Altura flexível */
+    text-align: center; /* Centraliza conteúdo interno */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+}
+
+/* Padronização das Paginas */
+#divcorpo {/* PADRONIZA TODAS AS PAGINAS */
+    width: 80%; /* Largura responsiva (80% do container pai) */
+    max-width: 1100px; /* Limite máximo para telas grandes */
+    margin: 20px auto; /* Centralização horizontal */
+    margin-bottom: 60px; /* Garante um espaço de 200px até o rodapé */
+    padding: 20px; /* Espaçamento interno */
+    overflow: visible; /* Garante que a divcorpo não corte conteúdo */
+    border: 1px solid white; /* Borda branca fina */
+    box-shadow: 5px 5px 200px #5e17eb; /* Sombra azulada (efeito neon) */
+    text-align: center; /* Centraliza conteúdo interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Fundamental para cálculo correto */
+}
+
+#Aba-Conteudo{ /* ABA ONDE INSERE CONTEUDO */
+    width: 95%; /* Ocupa 95% da largura da divcorpo */
+    max-width: 95%; /* Nunca ultrapassa a largura do container pai */
+    justify-items: auto;
+    box-sizing: border-box; /* Considera padding na largura total */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
+    padding: 15px; /* Mantém consistência com outras seções */
+    margin: 20px auto; /* Espaçamento interno */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Quebra palavras longas */
+    border: 1px solid white; /* Borda branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 20px #5e17eb; /* Sombra roxo suave */
+    background-color: rgba(5, 0, 34, 0.1); /* Fundo quase transparente */
+}
+
+#conteudo-mais-descricao {/* LAYOUT DE IMAGEM A ESQUERDA E TEXTO A DIREITA */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre elementos filhos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Layout de identificação das 'paginas principais' */
+#identificacao_pagina{
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    gap: 20px; /* Espaço entre células */
+}
 
 
 
 
 
 
-#tituloRedirecionar, .tituloRedirecionar {
-    cursor: pointer; /* Transforma o cursor em uma mãozinha */
-    text-decoration: underline; /* Sublinha o texto */
+/* Certificados */
+#conteudo-certificado{
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 20px; /* Espaço entre elementos */
+    transition: transform 0.5s;  
+    text-align: center;
+    flex-direction: column;
+}
+
+#conteudo-certificadoimg{
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    gap: 20px; /* Espaço entre elementos */
+    transition: transform 0.5s;  
+    text-align: center;
+}
+
+#conteudo-certificadoimg img{
+    max-width: 300px; /* Largura máxima */
+    height: auto; /* Altura proporcional */
+    margin: 10px; /* Espaçamento externo */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Formato de mão (indica ação) */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
+}
+
+#conteudo-certificado img:hover {  
+    transform: translateY(-2px); /* Efeito de "levitação" */  
+}  
+
+#conteudo-certificado p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mantém os itens alinhados no topo */
+    align-items: flex-start; /* Garante alinhamento correto */
+    text-align: justify;
+    height: 100%;
+    overflow: hidden; /* Impede que o conteúdo ultrapasse a div */
+}
+
+
+
+
+
+
+/* Botões */
+#botao-pagina{
+    width: 250px; /* Largura fixa */
+    min-height: 100px; /* Altura mínima em vez de fixa */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 15px; /* Espaçamento interno */
+    display: flex;
+    border: 2px solid white; /* Borda branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    font-size: 30px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
+    transition: all 0.5s ease-in-out; /* Animação suave */
+}
+
+#botao-navegacao{
+    width: 300px; /* Largura fixa */
+    border: 2px solid white; /* Borda branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto */
+    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
+    transition: all 0.5s ease-in-out; /* Animação suave */  
+}
+
+#botao-pagina:hover, #botao-navegacao:hover {
+    background-color: #272727; /* Fundo muda ao passar o mouse */
+    color: white; /* Mantém a cor do texto */
+    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
 }
 
 #voltarPaginaAnterior{
@@ -197,50 +348,11 @@ strong {
     margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Classes */
-
-.box {
-    width: 100%; /* Ocupa toda a largura da célula do grid */
-    max-width: 650px; /* Evita que estoure em telas grandes */
-    height: auto; /* Altura flexível */
-    text-align: center; /* Centraliza conteúdo interno */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas levemente arredondadas */
+#tituloRedirecionar, .tituloRedirecionar {
+    cursor: pointer; /* Transforma o cursor em uma mãozinha */
+    text-decoration: underline; /* Sublinha o texto */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* zona de teste */ 
 #Zona-B-Navegacao{
     margin-top: 15px;
     margin-bottom: 30px;
@@ -298,162 +410,9 @@ strong {
 
 
 
-   
-   
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* NOVO CSS */
-/* Padronização das Paginas */
-#divcorpo {/* PADRONIZA TODAS AS PAGINAS */
-    width: 80%; /* Largura responsiva (80% do container pai) */
-    max-width: 1100px; /* Limite máximo para telas grandes */
-    margin: 20px auto; /* Centralização horizontal */
-    margin-bottom: 60px; /* Garante um espaço de 200px até o rodapé */
-    padding: 20px; /* Espaçamento interno */
-    overflow: visible; /* Garante que a divcorpo não corte conteúdo */
-    border: 1px solid white; /* Borda branca fina */
-    box-shadow: 5px 5px 200px #5e17eb; /* Sombra azulada (efeito neon) */
-    text-align: center; /* Centraliza conteúdo interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Fundamental para cálculo correto */
-}
-
-#Aba-Conteudo{ /* ABA ONDE INSERE CONTEUDO */
-    width: 95%; /* Ocupa 95% da largura da divcorpo */
-    max-width: 95%; /* Nunca ultrapassa a largura do container pai */
-    justify-items: auto;
-    box-sizing: border-box; /* Considera padding na largura total */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
-    padding: 15px; /* Mantém consistência com outras seções */
-    margin: 20px auto; /* Espaçamento interno */
-    padding: 15px; /* Espaçamento interno */
-    margin-bottom: 20px;
-    word-wrap: break-word; /* Quebra palavras longas */
-    border: 1px solid white; /* Borda branca */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 20px #5e17eb; /* Sombra roxo suave */
-    background-color: rgba(5, 0, 34, 0.1); /* Fundo quase transparente */
-}
-
-#conteudo-mais-descricao {/* LAYOUT DE IMAGEM A ESQUERDA E TEXTO A DIREITA */
-    display: flex; /* Layout flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaço entre elementos filhos */
-    width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-/* Layout de identificação das 'paginas principais' */
-#identificacao_pagina{
-    display: flex; /* Layout flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 15px;
-    margin-bottom: 20px;
-    gap: 20px; /* Espaço entre células */
-}
-
-/* Certificados */
-#conteudo-certificado{
-    display: flex; /* Layout flexível */
-    align-items: center; /* Alinhamento vertical */
-    gap: 20px; /* Espaço entre elementos */
-    transition: transform 0.5s;  
-    text-align: center;
-    flex-direction: column;
-}
-
-#conteudo-certificadoimg{
-    display: flex; /* Layout flexível */
-    align-items: center; /* Alinhamento vertical */
-    gap: 20px; /* Espaço entre elementos */
-    transition: transform 0.5s;  
-    text-align: center;
-}
-
-#conteudo-certificadoimg img{
-    max-width: 300px; /* Largura máxima */
-    height: auto; /* Altura proporcional */
-    margin: 10px; /* Espaçamento externo */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Formato de mão (indica ação) */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
-}
-
-#conteudo-certificado img:hover {  
-    transform: translateY(-2px); /* Efeito de "levitação" */  
-}  
-
-#conteudo-certificado p{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Mantém os itens alinhados no topo */
-    align-items: flex-start; /* Garante alinhamento correto */
-    text-align: justify;
-    height: 100%;
-    overflow: hidden; /* Impede que o conteúdo ultrapasse a div */
-}
-
-/* Botões */
-#botao-pagina{
-    width: 250px; /* Largura fixa */
-    min-height: 100px; /* Altura mínima em vez de fixa */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 15px; /* Espaçamento interno */
-    display: flex;
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 30px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */
-}
-
-#botao-navegacao{
-    width: 300px; /* Largura fixa */
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 20px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */  
-}
-
-#botao-pagina:hover, #botao-navegacao:hover {
-    background-color: #272727; /* Fundo muda ao passar o mouse */
-    color: white; /* Mantém a cor do texto */
-    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
-}
 
 
 /* Membros da INTÁ */
@@ -482,6 +441,11 @@ strong {
     width: 300px;
 }
 
+
+
+
+
+
 /* selo */
 #selo{
     width: 80%;
@@ -499,6 +463,11 @@ strong {
     display: block;
     margin: 0 auto;
 }
+
+
+
+
+
 
 /* Insignias */
 #areaInsignias{
@@ -528,8 +497,13 @@ strong {
     text-align: center;
 }
 
+
+
+
+
+
 /* ENSINO MÉDIO */
-/* Manometro */
+/* Foguetes */
 #manometros {
     display: flex;
     justify-content: space-around; /* Distribui o espaço igualmente */
@@ -540,7 +514,6 @@ strong {
     
 }
 
-/* Foguetes */
 #Basuca{
     width: 80%;
     height: fit-content;
@@ -574,39 +547,14 @@ strong {
     margin-bottom: 20px;
 }
 
-/* Fotos */
-/* Baner */
-#Baner{
-    max-width: 80%;
-    min-width: 70%;
-    height: fit-content;
-    border-radius: 0%;
-    border: 1px solid white; /* Borda branca fina */
-    box-shadow: 0 0 15px rgb(255, 255, 255);
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-#Giga-Baner{
-    width: 90%;
-    margin: 20px auto 30px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
-    min-height: 300px; /* Ajuste conforme necessário */
-    border: 1px solid white; /* Borda branca fina */
-    box-shadow: 0 0 15px rgb(255, 255, 255);
 
-}
 
-#Mini-Baner {
-    width: 430px;
-    border-radius: 0;
-    height: auto; /* Garante que a altura se ajuste ao conteúdo */
-    margin: 0; /* Remove qualquer espaçamento externo */
-}
+
+
+
+
+
+
 
 /* LOGO DEVFARI */
 #figurelogoDevFari {
@@ -624,6 +572,74 @@ strong {
     border-radius: 0%;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* MENU LATERAL */
+aside.menu-lateral{
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    background-color: #1f1f1f;
+    padding: 40px 0 40px 1%;
+    border-right: 1px solid white;
+    box-shadow: 5px 0px 15px #5e17eb; /* Sombra na cor especificada */
+    overflow: hidden;
+}
+
+aside.menu-lateral:hover{
+    width: 300px;
+    box-shadow: 0px 0px 0px #5e17eb; /* Sombra na cor especificada */
+}
+
+.expandir{
+    width: 100%;
+    padding-left: 9px;
+    padding-bottom: 20px;
+}
+.expandir > i{
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+}
+
+ul li.item-menu{
+    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
+    width: 85%;
+}
+
+ul li.item-menu:hover{
+    background: #9b9b9b;
+}
+
+ul li.item-menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;/*  */
+    margin-bottom: 20px;
+    line-height: 40px;
+    padding-top: 20px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+ul li.item-menu a .icon i{
+    font-size: 30px;
+    margin-left: 0px;
 }
 
 
@@ -727,65 +743,15 @@ strong {
 
 
 
-/* MENU LATERAL */
-aside.menu-lateral{
-    position: fixed;
-    width: 80px;
-    height: 100%;
-    background-color: #1f1f1f;
-    padding: 40px 0 40px 1%;
-    border-right: 1px solid white;
-    box-shadow: 5px 0px 15px #5e17eb; /* Sombra na cor especificada */
-    overflow: hidden;
-}
 
-aside.menu-lateral:hover{
-    width: 300px;
-    box-shadow: 0px 0px 0px #5e17eb; /* Sombra na cor especificada */
-}
 
-.expandir{
-    width: 100%;
-    padding-left: 9px;
-    padding-bottom: 20px;
-}
-.expandir > i{
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
-}
 
-ul{
-    height: 100%;
-    list-style: none;
-}
 
-ul li.item-menu{
-    transition: all 0.5s ease-in-out;
-    border-radius: 15px;
-    width: 85%;
-}
 
-ul li.item-menu:hover{
-    background: #9b9b9b;
-}
 
-ul li.item-menu a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    display: flex;/*  */
-    margin-bottom: 20px;
-    line-height: 40px;
-    padding-top: 20px;
-}
 
-ul li.item-menu a .txt-link{
-    margin-left: 40px;
-    font-weight: bold;
-}
-
-ul li.item-menu a .icon i{
-    font-size: 30px;
-    margin-left: 0px;
+/* COISAS PARA VERIFICAR */
+#acompanhamento {
+    font-family: "Courier New", Courier, monospace; /* Estilo técnico */
+    color: white; /* Garante legibilidade */
 }
