@@ -1,264 +1,244 @@
 /* GERAL */
 /* Tags */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{ /* Aplica-se a todos os elementos da página */
+    margin: 0; /* Remove margem externa padrão */
+    padding: 0; /* Remove preenchimento interno padrão */
+    box-sizing: border-box; /* Garante que padding e borda sejam incluídos na largura/altura total */
 }
 
 html, body {
-    background-color: black; /* Fundo preto para contraste */
-    color: white; /* Cor do texto padrão */
-    font-family: Arial, sans-serif; /* Fonte principal (sans-serif) */
-    height: auto; /* Altura flexível conforme conteúdo */
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+    background-color: black; /* Define o fundo da página como preto */
+    color: white; /* Define a cor padrão do texto como branco */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
+    height: auto; /* A altura se ajusta ao conteúdo */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    height: 100%; /* Ocupa 100% da altura da tela */
+    overflow-x: hidden; /* Esconde qualquer conteúdo que transborde horizontalmente */
+    display: flex; /* Habilita o modelo de layout flexbox */
+    flex-direction: column; /* Organiza os itens flexíveis em coluna */
 }
 
 body {  
-    opacity: 0;  
-    transition: opacity 0.5s;  
-}  
+    opacity: 0;   /* Inicialmente, o corpo da página é invisível */
+    transition: opacity 0.5s;   /* Adiciona uma transição suave de opacidade de 0.5 segundos */
+}   
 
 h1 {
-    text-align: center; /* Centralização do título */
-    font-family: Georgia, serif; /* Fonte serifada para destaque */
-    padding-top: 20px;
-    padding-bottom: 10px;
+    text-align: center; /* Centraliza o texto do título h1 */
+    font-family: Georgia, serif; /* Define uma fonte serifada específica para h1 */
+    padding-top: 20px; /* Adiciona espaçamento superior */
+    padding-bottom: 10px; /* Adiciona espaçamento inferior */
 }
 
 h2 {
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    padding: 10px; /* Espaçamento interno */
-    text-align: center; /* Centralização */
+    font-family: "Times New Roman", Times, serif; /* Define uma fonte clássica para h2 */
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o texto do título h2 */
 }
 
 h3 {
-    font-family: "Times New Roman", Times, serif; /* Consistência visual */
-    text-align: center;
-    padding-top: 20px; /* Espaço acima do elemento */
-    padding-bottom: 10px;
+    font-family: "Times New Roman", Times, serif; /* Mantém a consistência visual com h2 */
+    text-align: center; /* Centraliza o texto do título h3 */
+    padding-top: 20px; /* Adiciona espaço acima do elemento */
+    padding-bottom: 10px; /* Adiciona espaçamento inferior */
 }
 
 h4{
-    text-align: left;
+    text-align: left; /* Alinha o texto do título h4 à esquerda */
 }
 
 p {
-    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada (estilo código) */
-    text-align: justify;
-    padding: 5px;
+    font-family: "Courier New", Courier, monospace; /* Define uma fonte monoespaçada (estilo código) para parágrafos */
+    text-align: justify; /* Justifica o texto do parágrafo */
+    padding: 5px; /* Adiciona espaçamento interno ao parágrafo */
 }
 
 img {
-    width: 300px; /* Largura fixa */
-    height: 300px; /* Altura fixa */
-    object-fit: cover; /* Corta imagem para preencher o espaço */
-    border-radius: 50%; /* Transforma imagem em círculo */
+    width: 300px; /* Define largura fixa para imagens */
+    height: 300px; /* Define altura fixa para imagens */
+    object-fit: cover; /* Corta a imagem para preencher o espaço, mantendo proporções */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
 }
 
 li{
-    text-align: justify;
-    font-family: "Courier New", Courier, monospace; /* Fonte monoespaçada (estilo código) */
-    padding: 5px;
+    text-align: justify; /* Justifica o texto dos itens de lista */
+    font-family: "Courier New", Courier, monospace; /* Define fonte monoespaçada para itens de lista */
+    padding: 5px; /* Adiciona espaçamento interno aos itens de lista */
 }
-
-
-
 
 
 /* STONGs */
 strong {
-    color: #5e17eb; /* Destaque em azul para palavras-chave */
+    color: #5e17eb; /* Define uma cor azul para o texto em destaque (strong) */
 }
 
 #strongdc {
-    color: #9bd23a; /* Destaque em azul para palavras-chave */
+    color: #9bd23a; /* Cor de destaque específica para o id strongdc */
 }
 
 #strongComunicações{
-    color: #0096e3;
+    color: #0096e3; /* Cor de destaque específica para o id strongComunicações */
 }
 
 #strongExercito{
-    color: #5f683b;
+    color: #5f683b; /* Cor de destaque específica para o id strongExercito */
 }
 
 #strongInta{
-    color: #004aad;
+    color: #004aad; /* Cor de destaque específica para o id strongInta */
 }
-
-
-
 
 
 /* CABEÇALHO E RODAPÉ */
 #cabecalho {
-    position: relative;
-    width: 100%;
-    text-align: center; /* Centraliza título/logo */
-    margin-bottom: 10px; /* Espaço abaixo do cabeçalho */
+    position: relative; /* Posicionamento relativo */
+    width: 100%; /* Ocupa 100% da largura */
+    text-align: center; /* Centraliza o conteúdo (título/logo) */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do cabeçalho */
     background-color: rgba(0, 0, 3, 0.103); /* Fundo semi-transparente */
 }
 
 #rodape {
-    position: fixed; /* Fixa na tela */
-    bottom: 0; /* Alinha na parte inferior */
-    width: 100%; /* Ocupa toda a largura */
-    padding: 10px; /* Espaçamento interno */
-    text-align: center; /* Centraliza texto */
-    background-color: rgba(0, 0, 3, 0.966); /* Fundo semi-transparente */
-    color: white; /* Cor do texto */
-    font-size: 20px; /* Tamanho grande */
-    font-weight: bold; /* Destaque */
-
-} 
-
-
-
+    position: fixed; /* Fixa o rodapé na tela */
+    bottom: 0; /* Alinha o rodapé na parte inferior da tela */
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o texto do rodapé */
+    background-color: rgba(0, 0, 3, 0.966); /* Fundo semi-transparente e escuro */
+    color: white; /* Cor do texto do rodapé */
+    font-size: 20px; /* Tamanho da fonte grande */
+    font-weight: bold; /* Texto em negrito */
+}   
 
 
 /* IMAGENS */
 #imagem {
-    width: 30%; /* Largura proporcional ao container pai */
-    max-width: 100%; /* Nunca ultrapassa a largura do container pai */
-    box-sizing: border-box; /* Considera padding na largura total */ 
-    display: flex; /* Flex para alinhar imagem */
-    justify-content: center; /* Centraliza conteúdo */
+    width: 30%; /* Largura proporcional ao elemento pai */
+    max-width: 100%; /* Garante que não exceda a largura do pai */
+    box-sizing: border-box; /* Inclui padding na largura total */ 
+    display: flex; /* Habilita flexbox para alinhamento */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 #imagem img {
-    max-width: 100%; /* Garante que a imagem nunca ultrapasse o contêiner */
+    max-width: 100%; /* A imagem não ultrapassa o contêiner */
     height: auto; /* Mantém a proporção da imagem */
     object-fit: contain; /* Ajusta a imagem dentro da div sem cortar */
 }
 
 /* Baner */
 #Baner{
-    max-width: 80%;
-    min-width: 70%;
-    height: fit-content;
-    border-radius: 0%;
+    max-width: 80%; /* Largura máxima para banners */
+    min-width: 70%; /* Largura mínima para banners */
+    height: fit-content; /* Altura se ajusta ao conteúdo */
+    border-radius: 0%; /* Sem bordas arredondadas */
     border: 1px solid white; /* Borda branca fina */
-    box-shadow: 0 0 15px rgb(255, 255, 255);
-    margin-top: 20px;
-    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgb(255, 255, 255); /* Sombra branca */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 30px; /* Espaçamento inferior */
 }
 #Giga-Baner{
-    width: 90%;
-    margin: 20px auto 30px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
+    width: 90%; /* Largura maior para banners grandes */
+    margin: 20px auto 30px; /* Centraliza horizontalmente e define margens */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 30px; /* Espaçamento inferior */
+    display: flex; /* Habilita flexbox */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Permite que as imagens quebrem linha se necessário */
-    min-height: 300px; /* Ajuste conforme necessário */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    min-height: 300px; /* Altura mínima */
     border: 1px solid white; /* Borda branca fina */
-    box-shadow: 0 0 15px rgb(255, 255, 255);
-
+    box-shadow: 0 0 15px rgb(255, 255, 255); /* Sombra branca */
 }
 
 #Mini-Baner {
-    width: 430px;
-    border-radius: 0;
-    height: auto; /* Garante que a altura se ajuste ao conteúdo */
-    margin: 0; /* Remove qualquer espaçamento externo */
+    width: 430px; /* Largura fixa para mini banners */
+    border-radius: 0; /* Sem bordas arredondadas */
+    height: auto; /* Altura se ajusta ao conteúdo */
+    margin: 0; /* Remove margens externas */
 }
-
-
-
-
-
 
 
 /* FORMATAÇÃO DE PAGINA */
 .box {
-    width: 100%; /* Ocupa toda a largura da célula do grid */
-    max-width: 650px; /* Evita que estoure em telas grandes */
+    width: 100%; /* Ocupa 100% da largura da célula do grid */
+    max-width: 650px; /* Largura máxima para evitar estourar em telas grandes */
     height: auto; /* Altura flexível */
-    text-align: center; /* Centraliza conteúdo interno */
+    text-align: center; /* Centraliza o conteúdo interno */
     padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Bordas levemente arredondadas */
 }
 
 /* Padronização das Paginas */
-#divcorpo {/* PADRONIZA TODAS AS PAGINAS */
-    width: 80%; /* Largura responsiva (80% do container pai) */
-    max-width: 1100px; /* Limite máximo para telas grandes */
-    margin: 20px auto; /* Centralização horizontal */
-    margin-bottom: 60px; /* Garante um espaço de 200px até o rodapé */
+#divcorpo { /* Contêiner principal para todas as páginas */
+    width: 80%; /* Largura responsiva (80% do pai) */
+    max-width: 1100px; /* Limite máximo de largura */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    margin-bottom: 60px; /* Garante espaço acima do rodapé */
     padding: 20px; /* Espaçamento interno */
-    overflow: visible; /* Garante que a divcorpo não corte conteúdo */
+    overflow: visible; /* Garante que o conteúdo não seja cortado */
     border: 1px solid white; /* Borda branca fina */
-    box-shadow: 5px 5px 200px #5e17eb; /* Sombra azulada (efeito neon) */
-    text-align: center; /* Centraliza conteúdo interno */
+    box-shadow: 5px 5px 200px #5e17eb; /* Sombra azulada com efeito neon */
+    text-align: center; /* Centraliza o conteúdo interno */
     border-radius: 10px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Fundamental para cálculo correto */
+    box-sizing: border-box; /* Inclui padding na largura total */
 }
 
-#Aba-Conteudo{ /* ABA ONDE INSERE CONTEUDO */
+#Aba-Conteudo{ /* Seção para inserir conteúdo principal */
     width: 95%; /* Ocupa 95% da largura da divcorpo */
-    max-width: 95%; /* Nunca ultrapassa a largura do container pai */
-    justify-items: auto;
-    box-sizing: border-box; /* Considera padding na largura total */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
-    padding: 15px; /* Mantém consistência com outras seções */
-    margin: 20px auto; /* Espaçamento interno */
+    max-width: 95%; /* Nunca ultrapassa a largura do pai */
+    justify-items: auto; /* Ajusta o alinhamento dos itens */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    overflow: hidden; /* Esconde conteúdo que transborde */
     padding: 15px; /* Espaçamento interno */
-    margin-bottom: 20px;
-    word-wrap: break-word; /* Quebra palavras longas */
+    margin: 20px auto; /* Espaçamento interno e centralização */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    word-wrap: break-word; /* Quebra palavras longas para evitar transbordo */
     border: 1px solid white; /* Borda branca */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 20px #5e17eb; /* Sombra roxo suave */
+    box-shadow: 5px 5px 20px #5e17eb; /* Sombra roxa suave */
     background-color: rgba(5, 0, 34, 0.1); /* Fundo quase transparente */
 }
 
-#conteudo-mais-descricao {/* LAYOUT DE IMAGEM A ESQUERDA E TEXTO A DIREITA */
-    display: flex; /* Layout flexível */
+#conteudo-mais-descricao { /* Layout para imagem à esquerda e texto à direita */
+    display: flex; /* Habilita flexbox */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaço entre elementos filhos */
+    gap: 20px; /* Espaço entre os elementos filhos */
     width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 15px; /* Espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
 
 /* Layout de identificação das 'paginas principais' */
 #identificacao_pagina{
-    display: flex; /* Layout flexível */
+    display: flex; /* Habilita flexbox */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 15px;
-    margin-bottom: 20px;
-    gap: 20px; /* Espaço entre células */
+    margin-top: 15px; /* Espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    gap: 20px; /* Espaço entre as células */
 }
-
-
-
-
 
 
 /* Certificados */
 #conteudo-certificado{
-    display: flex; /* Layout flexível */
-    align-items: center; /* Alinhamento vertical */
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Alinha itens verticalmente */
     gap: 20px; /* Espaço entre elementos */
-    transition: transform 0.5s;  
-    text-align: center;
-    flex-direction: column;
+    transition: transform 0.5s;   /* Transição para efeito hover */
+    text-align: center; /* Centraliza texto */
+    flex-direction: column; /* Organiza itens em coluna */
 }
 
-#conteudo-certificadoimg{
-    display: flex; /* Layout flexível */
-    align-items: center; /* Alinhamento vertical */
+#conteudo-certificadoimg{ /* Estilos para o contêiner de imagem de certificado */
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Alinha itens verticalmente */
     gap: 20px; /* Espaço entre elementos */
-    transition: transform 0.5s;  
-    text-align: center;
+    transition: transform 0.5s;   /* Transição para efeito hover */
+    text-align: center; /* Centraliza texto */
 }
 
 #conteudo-certificadoimg img{
@@ -266,39 +246,35 @@ strong {
     height: auto; /* Altura proporcional */
     margin: 10px; /* Espaçamento externo */
     border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Formato de mão (indica ação) */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733);
+    cursor: pointer; /* Muda o cursor para indicar clicável */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.733); /* Sombra branca */
 }
 
-#conteudo-certificado img:hover {  
-    transform: translateY(-2px); /* Efeito de "levitação" */  
-}  
+#conteudo-certificado img:hover {   
+    transform: translateY(-2px); /* Efeito de "levitação" ao passar o mouse */   
+}   
 
 #conteudo-certificado p{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Mantém os itens alinhados no topo */
-    align-items: flex-start; /* Garante alinhamento correto */
-    text-align: justify;
-    height: 100%;
-    overflow: hidden; /* Impede que o conteúdo ultrapasse a div */
+    display: flex; /* Habilita flexbox */
+    flex-direction: column; /* Organiza itens em coluna */
+    justify-content: flex-start; /* Alinha itens ao topo */
+    align-items: flex-start; /* Alinha itens à esquerda */
+    text-align: justify; /* Justifica o texto */
+    height: 100%; /* Ocupa 100% da altura do pai */
+    overflow: hidden; /* Impede que o conteúdo transborde */
 }
-
-
-
-
 
 
 /* Botões */
 #botao-pagina{
     width: 250px; /* Largura fixa */
-    min-height: 100px; /* Altura mínima em vez de fixa */
+    min-height: 100px; /* Altura mínima */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
     padding: 15px; /* Espaçamento interno */
-    display: flex;
+    display: flex; /* Habilita flexbox */
     border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
+    text-decoration: none; /* Remove sublinhado do link */
     color: white; /* Cor do texto */
     font-family: "Times New Roman", Times, serif; /* Estilo clássico */
     font-size: 30px; /* Tamanho do texto */
@@ -306,13 +282,13 @@ strong {
     background-color: transparent; /* Fundo transparente */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */
+    transition: all 0.5s ease-in-out; /* Animação suave ao interagir */
 }
 
 #botao-navegacao{
     width: 300px; /* Largura fixa */
     border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
+    text-decoration: none; /* Remove sublinhado do link */
     color: white; /* Cor do texto */
     font-family: "Times New Roman", Times, serif; /* Estilo clássico */
     font-size: 20px; /* Tamanho do texto */
@@ -320,7 +296,7 @@ strong {
     background-color: transparent; /* Fundo transparente */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */  
+    transition: all 0.5s ease-in-out; /* Animação suave ao interagir */  
 }
 
 #botao-pagina:hover, #botao-navegacao:hover {
@@ -330,424 +306,320 @@ strong {
 }
 
 #voltarPaginaAnterior{
-    display: grid;
+    display: grid; /* Habilita grid layout */
     grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de igual tamanho */
-    gap: 20px; /* Espaçamento entre os itens */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 20px;
+    gap: 20px; /* Espaçamento entre os itens da grid */
+    width: 100%; /* Ocupa 100% da largura */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaçamento superior */
 }
 
 #div_botao, #voltarPaginaAnterior{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    display: flex; /* Habilita flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    gap: 40px; /* Espaçamento entre os itens flexíveis */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 40px; /* Espaçamento superior */
+    margin-bottom: 30px; /* Espaçamento inferior */
 }
 
 #tituloRedirecionar, .tituloRedirecionar {
-    cursor: pointer; /* Transforma o cursor em uma mãozinha */
+    cursor: pointer; /* Transforma o cursor em uma mãozinha (indicando clicável) */
     text-decoration: underline; /* Sublinha o texto */
 }
 
 #Zona-B-Navegacao{
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 15px; /* Espaçamento superior */
+    margin-bottom: 30px; /* Espaçamento inferior */
 }
 
 #Zona-B-Navegacao a { 
-    display: inline-block; /* Permite aplicar margens */
-    font-size: 18px; /* Tamanho legível */
-    font-weight: bold; /* Destaque visual */
+    display: inline-block; /* Permite aplicar margens e padding */
+    font-size: 18px; /* Tamanho de fonte legível */
+    font-weight: bold; /* Texto em negrito */
 }
 
 #Zona-B-Navegacao a:hover {
-    opacity: 0.8;
-    transform: translateY(-1px); /* Efeito de "levitação" */
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
+    transform: translateY(-1px); /* Efeito de "levitação" ao passar o mouse */
 }
 
-#botao-pagina{
-    width: 250px; /* Largura fixa */
-    min-height: 100px; /* Altura mínima em vez de fixa */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 15px; /* Espaçamento interno */
-    display: flex;
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 30px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */
-}
-
-#botao-navegacao{
-    width: 300px; /* Largura fixa */
-    border: 2px solid white; /* Borda branca */
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto */
-    font-family: "Times New Roman", Times, serif; /* Estilo clássico */
-    font-size: 20px; /* Tamanho do texto */
-    font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo transparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 5px 5px 15px #5e17eb; /* Sombra na cor especificada */
-    transition: all 0.5s ease-in-out; /* Animação suave */  
-}
-
-#botao-pagina:hover, #botao-navegacao:hover {
-    background-color: #272727; /* Fundo muda ao passar o mouse */
-    color: white; /* Mantém a cor do texto */
-    box-shadow: 10px 10px 20px #5e17eb; /* Sombra mais intensa */
-}
-
-
-
-
-
-
+/* Duplicidade de #botao-pagina e #botao-navegacao - manter apenas uma versão */
+/* Estas regras já foram definidas acima e podem ser removidas se forem idênticas. */
 
 
 /* Membros da INTÁ */
 #Membro {
-    display: grid;
-    place-items: center; /* Centraliza itens dentro da grid */
-    justify-content: center; /* Centraliza a própria grid dentro do container pai */
-    align-items: center; /* Alinha itens verticalmente (dentro da grid) */
-    padding-top: 10px;
-    max-width: 90%;
-    margin: 0 auto; /* Centraliza a própria div horizontalmente na página */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid; /* Habilita grid layout */
+    place-items: center; /* Centraliza itens dentro da grid (horizontal e vertical) */
+    justify-content: center; /* Centraliza a própria grid dentro do pai */
+    align-items: center; /* Alinha itens verticalmente dentro da grid */
+    padding-top: 10px; /* Espaçamento superior */
+    max-width: 90%; /* Largura máxima */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsivo com colunas de no mínimo 250px */
 }
 
 #Membro p{
-    text-align: center;
+    text-align: center; /* Centraliza o texto dentro dos membros */
 }
-   
-   
+    
+    
 #Membro img{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 150px; /* Largura máxima para imagens de membro */
+    max-height: 150px; /* Altura máxima para imagens de membro */
 }
 
 .Membro-ind{
-    width: 300px;
+    width: 300px; /* Largura fixa para membros individuais */
 }
-
-
-
-
 
 
 /* selo */
 #selo{
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-    text-align: left;
-    align-items: top; /* Centraliza verticalmente */
-    font-size: 20px;
-    margin-bottom: 80px; /* Garante um espaço de 200px até o rodapé */
+    width: 80%; /* Largura para o selo */
+    display: block; /* Ocupa sua própria linha */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: left; /* Alinha texto à esquerda */
+    align-items: top; /* Alinha itens ao topo verticalmente */
+    font-size: 20px; /* Tamanho da fonte */
+    margin-bottom: 80px; /* Garante espaço antes do rodapé */
 }
 
 #selo img{
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 100px; /* Largura fixa para a imagem do selo */
+    height: auto; /* Altura proporcional */
+    display: block; /* Ocupa sua própria linha */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
-
-
-
-
 
 
 /* Insignias */
 #areaInsignias{
-    justify-items: auto; 
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-    justify-content: center; /* Centraliza as "insignias" horizontalmente */
+    justify-items: auto; /* Ajusta o alinhamento dos itens */ 
+    display: flex; /* Habilita flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    justify-content: center; /* Centraliza as insignias horizontalmente */
 }
 
 #insignia {
-    width: calc(33.33% - 40px); /* 33.33% - (2 * gap) */
-    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
-    text-align: center; /* Centraliza o texto e a imagem dentro de cada "insignia" */
-    margin-bottom: 0; /* O gap já cuida do espaçamento vertical */
-    padding: 15px; /* Exemplo: padding interno */
+    width: calc(33.33% - 40px); /* Calcula largura para 3 insignias por linha com espaçamento */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    text-align: center; /* Centraliza texto e imagem */
+    margin-bottom: 0; /* Remove margem inferior, o gap já cuida */
+    padding: 15px; /* Espaçamento interno */
 }
 
-#insignia img { /* ESTILOS PARA A IMAGEM DENTRO DE CADA "INSIGNIA" */
-    max-width: 100%; /* Garante que a imagem não transborde o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove o espaço extra abaixo da imagem */
+#insignia img { /* Estilos para a imagem dentro de cada insignia */
+    max-width: 100%; /* Garante que a imagem não transborde */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaço extra abaixo da imagem */
     margin: 0 auto 10px auto; /* Centraliza a imagem e adiciona margem inferior */
-    border-radius: 4px; /* Opcional: bordas arredondadas para as imagens */
+    border-radius: 4px; /* Bordas arredondadas opcionais */
 }
-   
+    
 #insignia p{
-    text-align: center;
+    text-align: center; /* Centraliza o texto da insignia */
 }
-
-
-
-
 
 
 /* ENSINO MÉDIO */
 /* Foguetes */
 #manometros {
-    display: flex;
+    display: flex; /* Habilita flexbox */
     justify-content: space-around; /* Distribui o espaço igualmente */
     align-items: center; /* Centraliza verticalmente */
     gap: 30px; /* Espaço entre as imagens */
-    padding: 20px;
-    flex-wrap: wrap; /* Quebra linha em telas pequenas */
+    padding: 20px; /* Espaçamento interno */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas pequenas */
     
 }
 
 #Basuca{
-    width: 80%;
-    height: fit-content;
-    border-radius: 0%;
+    width: 80%; /* Largura para a imagem "Basuca" */
+    height: fit-content; /* Altura se ajusta ao conteúdo */
+    border-radius: 0%; /* Sem bordas arredondadas */
 }
-   
+    
 #foto80Lateral{
-    max-width: 80%;
-    height: fit-content;
-    border-radius: 0%;
+    max-width: 80%; /* Largura máxima para fotos laterais */
+    height: fit-content; /* Altura se ajusta ao conteúdo */
+    border-radius: 0%; /* Sem bordas arredondadas */
 }
 
 #foto-semiquadrada{
-    max-width: 80%;
-    height: fit-content;
-    border-radius: 0%;
+    max-width: 80%; /* Largura máxima para fotos semiquadradas */
+    height: fit-content; /* Altura se ajusta ao conteúdo */
+    border-radius: 0%; /* Sem bordas arredondadas */
 }
 
 #texto {
-    width: 60%; /* Largura maior que a imagem */
-    text-align: justify; /* Texto alinhado às bordas */
+    width: 60%; /* Largura para blocos de texto */
+    text-align: justify; /* Justifica o texto */
 }
 
 #conteudo {
-    display: flex; /* Layout flexível */
+    display: flex; /* Habilita flexbox */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     gap: 20px; /* Espaço entre elementos filhos */
     width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 15px; /* Espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
-
-
-
-
-
-
-
-
 
 
 /* LOGO DEVFARI */
 #figurelogoDevFari {
-    position: relative;
-    width: 100%;
-    text-align: center; /* Centraliza título/logo */
-    margin-top: 60px;
-    margin-bottom: 1%;
-    bottom: 0px;
+    position: relative; /* Posicionamento relativo */
+    width: 100%; /* Ocupa 100% da largura */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 60px; /* Espaçamento superior */
+    margin-bottom: 1%; /* Espaçamento inferior */
+    bottom: 0px; /* Alinhamento na parte inferior */
 }
 
 #logo_devfari {
-    max-width: 80%;
-    height: fit-content;
-    border-radius: 0%;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    max-width: 80%; /* Largura máxima do logo */
+    height: fit-content; /* Altura se ajusta ao conteúdo */
+    border-radius: 0%; /* Sem bordas arredondadas */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 30px; /* Espaçamento inferior */
 }
-
-
-
-
 
 
 /* MENU LATERAL */
 aside.menu-lateral{
-    position: fixed;
-    width: 80px;
-    height: 100%;
-    background-color: #1f1f1f;
-    padding: 40px 0 40px 1%;
-    border-right: 1px solid white;
+    position: fixed; /* Fixa o menu lateral na tela */
+    width: 80px; /* Largura inicial recolhida */
+    height: 100%; /* Ocupa 100% da altura da tela */
+    background-color: #1f1f1f; /* Cor de fundo escura */
+    padding: 40px 0 40px 1%; /* Espaçamento interno */
+    border-right: 1px solid white; /* Borda direita branca */
     box-shadow: 5px 0px 15px #5e17eb; /* Sombra na cor especificada */
-    overflow: hidden;
+    overflow: hidden; /* Esconde conteúdo que transborde */
 }
 
 aside.menu-lateral:hover{
-    width: 300px;
-    box-shadow: 0px 0px 0px #5e17eb; /* Sombra na cor especificada */
+    width: 300px; /* Expande a largura ao passar o mouse */
+    box-shadow: 0px 0px 0px #5e17eb; /* Remove a sombra ao expandir */
 }
 
 .expandir{
-    width: 100%;
-    padding-left: 9px;
-    padding-bottom: 20px;
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    padding-left: 9px; /* Espaçamento à esquerda */
+    padding-bottom: 20px; /* Espaçamento inferior */
 }
 .expandir > i{
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
+    color: #ffffff; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Muda o cursor para indicar clicável */
 }
 
 ul{
-    height: 100%;
-    list-style: none;
+    height: 100%; /* Ocupa 100% da altura do pai */
+    list-style: none; /* Remove marcadores de lista */
 }
 
 ul li.item-menu{
-    transition: all 0.5s ease-in-out;
-    border-radius: 15px;
-    width: 85%;
+    transition: all 0.5s ease-in-out; /* Transição suave para efeitos de hover */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 85%; /* Largura do item do menu */
 }
 
 ul li.item-menu:hover{
-    background: #9b9b9b;
+    background: #9b9b9b; /* Muda o fundo ao passar o mouse */
 }
 
 ul li.item-menu a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    display: flex;/*  */
-    margin-bottom: 20px;
-    line-height: 40px;
-    padding-top: 20px;
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-size: 20px; /* Tamanho da fonte */
+    display: flex; /* Habilita flexbox para alinhamento */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    line-height: 40px; /* Altura da linha para espaçamento do texto */
+    padding-top: 20px; /* Espaçamento superior */
 }
 
 ul li.item-menu a .txt-link{
-    margin-left: 40px;
-    font-weight: bold;
+    margin-left: 40px; /* Margem à esquerda para o texto do link */
+    font-weight: bold; /* Texto em negrito */
 }
 
 ul li.item-menu a .icon i{
-    font-size: 30px;
-    margin-left: 0px;
+    font-size: 30px; /* Tamanho do ícone */
+    margin-left: 0px; /* Remove margem esquerda padrão */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Adaptações */
 /* Ajustes para mobile */
-@media (max-width: 480px) {
-    #divcorpo { padding: 15px; }
-    #imagem img { width: 200px; height: 200px; }
-    .botao { font-size: 24px; min-height: 80px; }
+@media (max-width: 480px) { /* Estilos aplicados para telas de até 480px de largura */
+    #divcorpo { padding: 15px; } /* Reduz o padding da divcorpo */
+    #imagem img { width: 200px; height: 200px; } /* Reduz o tamanho das imagens */
+    .botao { font-size: 24px; min-height: 80px; } /* Ajusta fonte e altura mínima dos botões */
 }
 
 /* Para telas muito pequenas (máx. 600px), 1 botão por linha */
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* Estilos aplicados para telas de até 600px de largura */
     .botao {
-        flex: 1 1 100%; /* Ocupa toda a linha */
-        max-width: 250px;
+        flex: 1 1 100%; /* Ocupa toda a largura da linha */
+        max-width: 250px; /* Largura máxima */
     }
 }
 
-@media (max-width: 768px) {  
-    /* Ajusta grid e flex containers */  
-    .grid-container {  
-        grid-template-columns: 1fr;  
-    }  
+@media (max-width: 768px) {   /* Estilos aplicados para telas de até 768px de largura (tablets e celulares) */
+    /* Ajusta grid e flex containers */   
+    .grid-container {   
+        grid-template-columns: 1fr;   /* Altera o grid para uma única coluna */
+    }   
     
-    .conteudo-certificado,  
-    #conteudo {  
-        flex-direction: column;  
-        align-items: center;  
-    }  
+    .conteudo-certificado,   
+    #conteudo {   
+        flex-direction: column;   /* Altera a direção flex para coluna (empilha itens verticalmente) */
+        align-items: center;   /* Centraliza itens */
+    }   
 
-    /* Ajusta elementos de texto e imagem */  
-    .texto-certificado-esquerda,  
-    .texto-certificado-direita,  
-    #imagem,  
-    #texto {  
-        width: 100%;  
-        max-width: 100%;  
-        text-align: center;  
-    }  
+    /* Ajusta elementos de texto e imagem */   
+    .texto-certificado-esquerda,   
+    .texto-certificado-direita,   
+    #imagem,   
+    #texto {   
+        width: 100%;   /* Ocupa 100% da largura */
+        max-width: 100%;   /* Largura máxima de 100% */
+        text-align: center;   /* Centraliza o texto */
+    }   
 
     #manometros {
-        flex-direction: column; /* Empilha verticalmente */
-        gap: 20px;
+        flex-direction: column; /* Empilha as imagens de manômetros verticalmente */
+        gap: 20px; /* Espaçamento entre elas */
     }
     
     #manometros img {
-        max-width: 100%; /* Ocupa toda largura em mobile */
+        max-width: 100%; /* Ocupa toda largura disponível em mobile */
     }
-}  
+}   
 
 /* Layout com 3 botões por linha */
-@media (min-width: 901px) {
+@media (min-width: 901px) { /* Estilos aplicados para telas a partir de 901px de largura */
     .botao {
-        flex: 1 1 calc(33.33% - 40px); /* Garante 3 botões por linha */
-        max-width: 250px; /* Mantém tamanho fixo */
+        flex: 1 1 calc(33.33% - 40px); /* Garante 3 botões por linha, com espaçamento */
+        max-width: 250px; /* Mantém o tamanho fixo dos botões */
     }
 }
 
 /* Para telas menores (máx. 900px), 2 botões por linha */
-@media (max-width: 900px) {
+@media (max-width: 900px) { /* Estilos aplicados para telas de até 900px de largura */
     .botao {
-        flex: 1 1 calc(50% - 40px); /* Ajusta para 2 botões por linha */
-        max-width: 250px;
+        flex: 1 1 calc(50% - 40px); /* Ajusta para 2 botões por linha, com espaçamento */
+        max-width: 250px; /* Mantém o tamanho fixo dos botões */
     }
 }
 
 
-
-/* NOVA AEA DE TESTES */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* NOVA AREA DE TESTES */
+/* Esta seção parece ser um placeholder para novos estilos em desenvolvimento. */
 
 
 /* COISAS PARA VERIFICAR */
