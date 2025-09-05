@@ -1,0 +1,15 @@
+<div class="certificado">
+<img src="caminho/para/o/certificado/outros_1.jpg" alt="Certificado do Curso 1" class="certificado-img">
+<div class="certificado-info">
+    <h3>Titulo</h3>
+    <p>Texto</p>
+</div>
+</div>
+
+<div class="certificado-texto-apenas">
+    <div class="certificado-info">
+        <h3>Titulo</h3>
+        <p>Texto</p>
+        <a href="" class="certificado-button" target="_blank">Certificado</a>
+    </div>
+</div>
