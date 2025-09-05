@@ -1,8 +1,14 @@
 /* Estilos Globais e Reset */
-body, h1, h2, p {
+body, h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    
+}
+
+h2, h3, h4{
+    padding-top: 20px;
+    font-weight: bold
 }
 
 body {
@@ -13,6 +19,31 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.strong_base{
+    color: #2196f3; /* Uma cor verde para destacar o texto */
+    font-weight: bold
+}
+
+.strong_data_cience {
+    color: #9bd23a; /* Cor de destaque específica para o id strongdc */
+    font-weight: bold
+}
+
+.strong_comunicacoes{
+    color: #0096e3; /* Cor de destaque específica para o id strongComunicações */
+    font-weight: bold
+}
+
+.strong_exercito{
+    color: #5f683b; /* Cor de destaque específica para o id strongExercito */
+    font-weight: bold
+}
+
+.strong_inta{
+    color: #004aad; /* Cor de destaque específica para o id strongInta */
+    font-weight: bold
 }
 
 /* Header */
@@ -313,5 +344,65 @@ body {
     .duas-imagens-300px {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+/* Seção da Galeria de Insígnias */
+.insignia-gallery-section {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Grade de Insígnias 4x */
+.insignia-grid-4x {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+/* Item individual da Insígnia */
+.insignia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.insignia-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.insignia-text {
+    font-size: 0.9rem;
+    color: #cccccc;
+    text-align: center;
+}
+
+/* Responsividade para a galeria de insígnias */
+@media (max-width: 768px) {
+    .insignia-grid-4x {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .insignia-grid-4x {
+        grid-template-columns: 1fr;
     }
 }
