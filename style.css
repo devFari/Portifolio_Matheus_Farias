@@ -524,3 +524,32 @@ li{
         text-align: center;
     }
 }
+
+
+
+
+
+
+
+
+/* Container para o iframe */
+.iframe-container {
+    width: 100%;
+    text-align: center;
+    background-color: #2a2a2a; /* Fundo padrão dos seus cards */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.iframe-wrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que o iframe respeite o border-radius se necessário */
+}
+
+.iframe-wrapper iframe {
+    border: 1px solid #444; /* Uma borda sutil para destacar o widget */
+    border-radius: 8px;
+}
